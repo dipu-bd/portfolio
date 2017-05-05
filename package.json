@@ -6,7 +6,10 @@
   "repository": "git@github.com:dipu-bd/dipu-bd.github.io.git",
   "author": "dipu-bd <dipu.sudipta@gmail.com>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+  	"build": "webpack",
+  	"watch": "webpack --progress --colors --watch"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
