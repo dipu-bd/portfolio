@@ -7,8 +7,9 @@
   "author": "dipu-bd <dipu.sudipta@gmail.com>",
   "license": "MIT",
   "scripts": {
-  	"build": "webpack",
-  	"watch": "webpack --progress --colors --watch"
+    "build": "webpack --config=webpack.config.js --progress --colors -d",
+    "watch": "webpack --config=webpack.config.js --progress --colors -d --watch",
+    "release": "webpack --config=webpack.config.js --progress --colors -p"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
