@@ -7,18 +7,9 @@
 	<meta name="description" content="Portfolio of Sudipto Chandra">
 	<meta name="author" content="Sudipto Chadra">
 
-	<title>Sudipto Chandra</title>
-
-	<!-- stylesheets and scripts -->
+	<title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-	<!-- Vue element -->
-	<div id="app">
-		Please wait a moment.				
-	</div>
-
-	<!-- Scripts -->
-	<script type="text/javascript" src="bin/app.min.js"></script>
-
+<%= require('./partials/body.ejs')({ user: 'Dipu' }) %>
 </body>
 </html>
