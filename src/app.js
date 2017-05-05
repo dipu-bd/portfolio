@@ -1,2 +1,2 @@
-cats = require('./cat.js');
-console.log(cats);
+import cats  from './cat.js';
+document.write(cats);
