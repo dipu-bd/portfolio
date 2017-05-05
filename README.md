@@ -1,2 +1,2 @@
-# dipu-bd.github.io
-My Blog
+# My Portfolio
+Sudipto Chandra (Dipu)
