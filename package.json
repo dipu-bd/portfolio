@@ -2,7 +2,7 @@
   "name": "dipu-bd",
   "version": "1.0.0",
   "description": "My portfolio",
-  "main": "app.js",
+  "main": "src/app.js",
   "repository": "git@github.com:dipu-bd/dipu-bd.github.io.git",
   "author": "dipu-bd <dipu.sudipta@gmail.com>",
   "license": "MIT"
