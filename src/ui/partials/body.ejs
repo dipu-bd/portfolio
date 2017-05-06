@@ -1,31 +1,21 @@
 <div class="jumbotron">
 	<div class="container">
-		<div class="media hidden-xs">
-			<div class="media-left media-middle">
-				<img class="media-object" src="./static/propic.jpg" alt="Profile Photo" style="border-radius: 50%; max-height: 220px;">
-			</div>
-			<div class="media-body well-sm">
-				<h1>Hi!</h1>
-				<p style="font-size: 2.5em">
-					I'm <span class="personal-name"><%= Personal.name %></span>.
-				</p>
-				<p><span class="personal-intro"><%= Personal.intro %></span></p>
-			</div>
-		</div>
-
-		<div class="visible-xs text-center">
-			<img src="./static/propic.jpg" alt="Profile Photo" style="border-radius: 50%; max-height: 220px;">
-			<h1>Hi!</h1>
-			<p style="font-size: 2.5em">
-				I'm <span class="personal-name"><%= Personal.name %></span>.
-			</p>
-			<p><span class="personal-intro"><%= Personal.intro %></span></p>
-		</div>
+		<h1>Hi!</h1>
+		<h2>I'm <%= Personal.name %></h2>
+		<p><span class="personal-intro"><%= Personal.intro %></span></p>
 	</div>
 </div>
 
 <div class="container">
-	<div style="font-size: 1.4em">
-		<%= Personal.about() %>	
+	<div class="row">		
+		<div class="col-md-4 text-center">			
+			<img class="img img-responsive" src="./static/propic.jpg" alt="ProPic" style="  border-radius: 50%; box-shadow: 3px 3px 10px #aaa; height: 300px;">
+		</div>
+		<div class="col-md-8">
+			<h2 class="col-xs-12 text-center" style="padding-bottom: 10px; margin-bottom: 15px; border-bottom: 1px solid #9cc">About Me</h2>
+			<div style="text-align: justify; font-size: 1.35em">
+				<%= Personal.about() %>	
+			</div>
+		</div>
 	</div>
 </div>
