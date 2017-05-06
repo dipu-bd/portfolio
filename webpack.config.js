@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
 	entry: {
@@ -15,7 +16,7 @@ module.exports = {
 	},
 
 	module: {
-		rules: [{
+		loaders: [{
 			test: /\.js$/,
 			exclude: /node_modules/,
 			loader: 'babel-loader'
@@ -24,20 +25,30 @@ module.exports = {
 			loader: "ejs-loader"
 		}, {
 			test: /\.css$/,
-	        //use: [ 'style-loader', 'css-loader' ]
-	        use: ExtractTextPlugin.extract({
+			//use: [ 'style-loader', 'css-loader' ]
+			use: ExtractTextPlugin.extract({
 				use: 'css-loader'
 			})
+		}, { 
+			test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/, 
+			loader: 'url-loader?limit=100000' 
 		}]
 	},
 
 
 	plugins: [
 		new WebpackCleanupPlugin(),
-		new ExtractTextPlugin("[name].css"),
+		new OptimizeCssAssetsPlugin(),
+		new ExtractTextPlugin("[name].min.css"),
 		new HtmlWebpackPlugin({
 			template: './src/template.js',
-			minify: false //require('html-minifier')
+			minify: {
+				collapseWhitespace: true,
+				removeComments: true,
+				removeRedundantAttributes: true,
+				removeScriptTypeAttributes: true,
+				removeStyleLinkTypeAttributes: true
+			}
 		}),
 		new webpack.optimize.UglifyJsPlugin({
 			compress: {
