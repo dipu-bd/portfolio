@@ -1,0 +1,24 @@
+{
+	"name": "Sudipto Chandra",
+	"dob": "April 6, 1993",
+	"intro": "Software Engineer. Experienced in web and desktop application development.",
+	"about": [
+		"I like to do creative work that can challenge and test my abilities to its max. I love interactive systems with hearty interfaces (who doesn't!). That's why I aim is to achieve the maximum beauty and performance with minimum resource when implementing a system.",
+		"Professionally, I am a full-stack web developer. As a hobby, I have worked on several desktop applications. In future, I plan to work on mobile platforms. Also, I have a great interest in game development.",
+		"Time is limited for all of us. So I always try to savour the taste of things I like and care about. I love this stupid machine that answers to all my prayers, unconditionally. My greater goal in life is to leave behind a footprint that will shine upon the future generations."
+	],
+	"links": {
+		"facebook": "https://www.facebook.com/sdipu.fb",
+		"googleplus": "https://plus.google.com/+SudiptoChandraDipu",
+		"github": "https://github.com/dipu-bd",
+		"linkedin": "https://www.linkedin.com/in/sudiptochandra"
+	},
+	"contact": {
+		"email": "dipu.sudipta@gmail.com",
+		"address": "Basabo, Dhaka, Bangladesh",
+		"phones": [
+			"+880-1759-687204",
+			//"+880-1633-576373",
+		]
+	},
+}
