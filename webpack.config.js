@@ -4,13 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
-const OUTPUT_PATH = path.join(__dirname, 'bin');
-
 module.exports = {
-	 entry: path.join(__dirname, 'src/index.js'),
+	 entry: './src/app.js',
 	 output: {
-		path: OUTPUT_PATH,
-		filename: 'index.min.js',
+		path: path.join(__dirname, '.bin'),
+		filename: 'app.min.js'
 	 },
 	 module: {
 		loaders: [{
@@ -24,22 +22,20 @@ module.exports = {
 	},
 	plugins: [
 		new WebpackCleanupPlugin(),
+		new HtmlWebpackPlugin({
+    		template: './src/template.js',
+    	}),
 		new webpack.optimize.UglifyJsPlugin({
 			compress: {
-				warnings: true,
+				warnings: false,
 			},
 			output: {
 				comments: false,
 			},
 		}),
-		new HtmlWebpackPlugin({
-			title: 'Sudipto Chandra - Portfolio',
-			//favicon: '',
-    		template: path.join(__dirname, 'src/index.ejs'),
-    	}),
 		new CopyWebpackPlugin([{
 			from: path.join(__dirname, 'public'),
-			to: path.join(OUTPUT_PATH, 'public')
+			to: 'public'
 		}], {
             ignore: [ '.*' ]
         }),
