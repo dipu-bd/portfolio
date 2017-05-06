@@ -54,11 +54,11 @@
 	//
 	// Desktop Technology
 	//
-	"winform": {
+	"winforms": {
 		"display": "Windows Form Application",
 		"category": [ "Technology", "Desktop" ]
 	},
-	"net": {
+	".net": {
 		"display": "Microsoft .NET",
 		"category": [ "Technology", "Desktop", "Framework" ]
 	},
@@ -126,6 +126,10 @@
 		"display": "Parallax",
 		"category": [ "Technology", "Web", "Front-End" ]
 	},
+	"vue": {
+		"display": "VueJS",
+		"category": [ "Technology", "Web", "Front-End", "Framework" ]
+	},
 
 
 	//
@@ -151,6 +155,10 @@
 		"display": "GNU Bison",
 		"category": [ "Tools", "Build Tool" ]
 	},
+	"nsis": {
+		"display": "Nullsoft Scriptable Install System",
+		"category": [ "Tools", "Build Tool" ]
+	},	
 	"maven": {
 		"display": "Apache Maven",
 		"category": [ "Tools", "Package Manager" ]
@@ -199,7 +207,6 @@
 		"display": "LaTeX",
 		"category": [ "Tools", "Editing" ]
 	},
-	
 	"linux": {
 		"display": "Linux (Ubuntu, LinuxMint)",
 		"category": [ "Tools", "Operating System" ]
@@ -223,6 +230,10 @@
 	"problem": {
 		"display": "Problem Solving",
 		"category": "Concept"
+	},
+	"api": {
+		"display": "Web API",
+		"category": "Concept",
 	},
 	"web": {
 		"display": "Web Development",
