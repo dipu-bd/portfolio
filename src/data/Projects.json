@@ -1,0 +1,19 @@
+{
+	"uva-arena": {
+		"name": "UVA Arena",
+		"type": [ "Windows", "Desktop Application", "Utility" ],
+		"skills": [ "csharp", "winforms", ".net", "vstudio", "nsis", "desktop", "software", "api" ],
+		"commits": "90+",
+		"release": "7",
+		"stars": "20+",
+		"downloads": "6000+",
+		"story": "This software aims to provide a useful and informative tool to help users with their programming practice. Almost every features of <a href=\"uhunt.felix-halim.net\">uHunt</a> has been included. Additionally, it has code editing, debugging and customizable problem list view options.",
+		"links": {
+			"web": "https://dipu-bd.github.com/UVA-Arena",
+			"source": "https://github.com/dipu-bd/UVA-Arena",
+			"download": "https://github.com/dipu-bd/UVA-Arena/releases/download/1.7/UVA_Arena_1.7_setup.exe"
+		},
+		"screenshots": [
+		]
+	}
+}
