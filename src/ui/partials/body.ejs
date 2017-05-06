@@ -1,13 +1,31 @@
 <div class="jumbotron">
 	<div class="container">
-		<h1>Hi!</h1>
-		<p>I'm <span class="personal-name"><%= Personal.name %></span>.</p>
-		<p><span class="personal-intro"><%= Personal.intro %></span></p>
+		<div class="media hidden-xs">
+			<div class="media-left media-middle">
+				<img class="media-object" src="./static/propic.jpg" alt="Profile Photo" style="border-radius: 50%; max-height: 220px;">
+			</div>
+			<div class="media-body well-sm">
+				<h1>Hi!</h1>
+				<p style="font-size: 2.5em">
+					I'm <span class="personal-name"><%= Personal.name %></span>.
+				</p>
+				<p><span class="personal-intro"><%= Personal.intro %></span></p>
+			</div>
+		</div>
+
+		<div class="visible-xs text-center">
+			<img src="./static/propic.jpg" alt="Profile Photo" style="border-radius: 50%; max-height: 220px;">
+			<h1>Hi!</h1>
+			<p style="font-size: 2.5em">
+				I'm <span class="personal-name"><%= Personal.name %></span>.
+			</p>
+			<p><span class="personal-intro"><%= Personal.intro %></span></p>
+		</div>
 	</div>
 </div>
 
 <div class="container">
-	<div class="thumbnail">
-		<%= Personal.about() %>
+	<div style="font-size: 1.4em">
+		<%= Personal.about() %>	
 	</div>
 </div>
