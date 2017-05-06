@@ -1,19 +1,23 @@
-module.exports = {
-	name: "Sudipto Chandra",
-	dob: new Date("April 6, 1993"),
-	intro: "Full-stack web developer. Has experience in desktop-app development. Expert in algorithm design and problem solving.",
-	links: {
-		facebook: "https://www.facebook.com/sdipu.fb",
-		googleplus: "https://plus.google.com/+SudiptoChandraDipu",
-		github: "https://github.com/dipu-bd",
-		linkedin: "https://www.linkedin.com/in/sudiptochandra"		
-	},
-	contact: {
-		email: "dipu.sudipta@gmail.com",
-		address: "Basabo, Dhaka, Bangladesh",
-		phones: [ 
-			"+880-1759-687204",
-			//"+880-1633-576373",
-		]
-	},
+const _ = require('lodash');
+var Personal = require('../data/Personal.json');
+
+//
+// Enhance module
+//
+Personal._about = Personal.about;
+Personal.about = function(tag) {
+	tag = tag || 'p';
+	const start = '\n<' + tag + '>';
+	const close = '</' + tag + '>\n';
+	return start + _.join(this._about, close + start) + close;
 };
+
+//
+// Export the modules
+//
+module.exports = Personal;
+
+
+//
+// Private functions
+//

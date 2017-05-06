@@ -20,6 +20,8 @@
     "cross-env": "^4.0.0",
     "ejs-loader": "^0.3.0",
     "html-webpack-plugin": "^2.28.0",
+    "json-loader": "^0.5.4",
+    "sass-loader": "^6.0.3",
     "webpack": "^2.5.0",
     "webpack-cleanup-plugin": "^0.5.1",
     "webpack-dev-server": "^2.4.5"
