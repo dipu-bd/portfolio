@@ -199,6 +199,15 @@ module.exports = {
 		display: "LaTeX",
 		category: ["Tools", "Editing"]
 	},
+	
+	'linux': {
+		display: "Linux (Ubuntu, LinuxMint)",
+		category: ["Tools", "Operating System"]
+	},
+	'windows': {
+		display: "Windows (XP, 7, 8.1, 10)",
+		category: ["Tools", "Operating System"]
+	},
 
 	//
 	// Concepts
