@@ -1,10 +1,16 @@
+const fs = require('fs');
+const _ = require('lodash');
 const path = require('path');
 const webpack = require('webpack');
+const gracefulFs = require('graceful-fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+gracefulFs.gracefulify(fs);
+var release = (process.env.NODE_ENV === 'production');
 
 module.exports = {
 	entry: {
@@ -15,56 +21,74 @@ module.exports = {
 		filename: '[name].min.js'
 	},
 
-	module: {
-		loaders: [{
-			test: /\.js$/,
-			exclude: /node_modules/,
-			loader: 'babel-loader'
-		}, {			
-			test: /\.ejs$/,
-			loader: "ejs-loader"
-		}, {
-			test: /\.css$/,
-			//use: [ 'style-loader', 'css-loader' ]
-			use: ExtractTextPlugin.extract({
-				use: 'css-loader'
-			})
-		}, { 
-			test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/, 
-			loader: 'url-loader?limit=100000' 
-		}]
-	},
+	module: {		
+		loaders: [
+			// babel-loader compiles js files using ecmascipt6 engine.
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader'
+			}, 
+			// compiles ejs files into html
+			{			
+				test: /\.ejs$/,
+				loader: "ejs-loader"
+			}, 
+			// copy all static resources into single svg file
+			// note: url-loader useds file-loader
+			{ 
+				test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/, 
+				loader: 'url-loader?limit=100000' 
+			}, 
+			// converts all css files to single css file in output dir
+			{
+				test: /\.css$/,
+				//use: [ 'style-loader', 'css-loader' ]
+				use: ExtractTextPlugin.extract({
+					use: 'css-loader'
+				})
+			},
+		]
+	}
+};
 
+var plugins = [
+	new WebpackCleanupPlugin(),	
+	new ExtractTextPlugin("[name].min.css"),
+	new CopyWebpackPlugin([{
+		from: path.join(__dirname, 'static'),
+		to: 'static'
+	}], {
+		ignore: [ 			
+			'.*', // ignore files starting with a dot
+		],
+		copyUnmodified: false
+	}),
+	new HtmlWebpackPlugin({
+		template: './src/template.js',
+		minify: release && {
+			collapseWhitespace: true,
+			removeComments: true,
+			removeRedundantAttributes: true,
+			removeScriptTypeAttributes: true,
+			removeStyleLinkTypeAttributes: true
+		}
+	}),	
+];
 
-	plugins: [
-		new WebpackCleanupPlugin(),
+// plugins to load only for release profile
+if(release) {
+	plugins = _.concat(plugins, [
 		new OptimizeCssAssetsPlugin(),
-		new ExtractTextPlugin("[name].min.css"),
-		new HtmlWebpackPlugin({
-			template: './src/template.js',
-			minify: {
-				collapseWhitespace: true,
-				removeComments: true,
-				removeRedundantAttributes: true,
-				removeScriptTypeAttributes: true,
-				removeStyleLinkTypeAttributes: true
-			}
-		}),
 		new webpack.optimize.UglifyJsPlugin({
 			compress: {
-				warnings: false,
+				warnings: true,
 			},
 			output: {
 				comments: false,
 			},
 		}),
-		new CopyWebpackPlugin([{
-			from: path.join(__dirname, 'static'),
-			to: 'static'
-		}], {
-			ignore: [ 			
-				'.*', // ignore files starting with a dot
-			]
-		})
-	]
-};
+	])
+}
+
+module.exports.plugins = plugins;
