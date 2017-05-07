@@ -69,7 +69,7 @@
 	"junit": {
 		"display": "JUnit",
 		"category": [ "Technology", "Desktop", "Testing" ]
-	},
+	}
 
 	//
 	// Web Technology : Back End
@@ -254,23 +254,29 @@
 	"softeng": {
 		"display": "Software Engineering",
 		"category": "Concept"
-	}
+	},
+	"networking": {
+		"display": "Computer Networking",
+		"category": "Concept"
+	},
 
 	//
 	// Others
-	// 	
-	/*
+	// 
 	"opencv": {
 		"display": "OpenCV",
-		"category": [ "Library", "Tools" ]
+		"category": [ "Library", "Python" ]
 	},
 	"numpy": {
 		"display": "NumPy",
-		"category": [ "Library", "Tools" ]
+		"category": [ "Library", "Python" ]
 	},
 	"asm": {
-		"display": "Assembly",
-		"category": "Language"
-	}, 
-	*/
+		"display": "x86 Assembly",
+		"category": ["Language"]
+	},
+	"sockets": {
+		"display": "Java Socket Programming", 
+		"category": ["Technology", "Desktop", "Library"]
+	}
 }
