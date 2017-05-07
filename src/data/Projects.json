@@ -55,10 +55,12 @@
 			"alt": "The Landing Page"
 		}, {
 			"src": "test.png",
-			"alt": "The Test Page"
+			"alt": "The Test Page",
+			"caption": "Interactive and beautiful interface"
 		}, {
 			"src": "report.png",
-			"alt": "The Report Page"
+			"alt": "The Report Page",
+			"caption": "The result of the test"
 		}, {
 			"src": "print.png",
 			"alt": "Generated Report For Printing"
