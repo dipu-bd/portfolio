@@ -2,9 +2,5 @@
 	"title": "Sudipto Chandra - Portfolio",
 	"author": "Sudipto Chandra (dipu.sudipta@gmail.com)",
 	"description": "A personal portfolio website",
-	"top-projects": {
-		"first" : "",
-		"second" : "",
-		"third" : ""
-	}
+	"top-projects": [ "uva-arena", "" ]
 }
