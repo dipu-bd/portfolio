@@ -2,6 +2,7 @@
 // Styles
 //
 require('bootstrap-sass/assets/stylesheets/_bootstrap.scss');
+require('font-awesome/scss/font-awesome.scss')
 require('./styles/main.scss');
 
 //
