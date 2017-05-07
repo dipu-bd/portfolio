@@ -3,8 +3,8 @@
 		<div class="row">
 			<div class="col-sm-offset-2">
 				<div style="font-size: 3.5em">Hi!</div>
-				<div style="font-size: 2.5em">I'm <%= Personal.name %></div>
-				<div style="font-size: 1.5em"><%= Personal.intro %></div>
+				<div style="font-size: 2.5em">I'm <%= models.Personal.name %></div>
+				<div style="font-size: 1.5em"><%= models.Personal.intro %></div>
 			</div>
 		</div>
 	</div>
@@ -38,7 +38,7 @@
 					About Me
 				</div>
 				<div style="text-align: justify; font-size: 1em">
-					<%= Personal.about() %>	
+					<%= models.Personal.about() %>	
 				</div>
 			</div>
 		</div>

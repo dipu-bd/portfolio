@@ -65,7 +65,7 @@ var plugins = [
 		copyUnmodified: false
 	}),
 	new HtmlWebpackPlugin({
-		template: './src/template.js',
+		template: './src/index.ejs',
 		minify: release && {
 			collapseWhitespace: true,
 			removeComments: true,
