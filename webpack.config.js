@@ -17,7 +17,7 @@ module.exports = {
 		app: './src/app.js'
 	},
 	output: {
-		path: path.join(__dirname, '.bin'),
+		path: path.join(__dirname, release ? 'dist' : '.bin'),
 		filename: '[name].min.js'
 	},
 
@@ -53,7 +53,7 @@ module.exports = {
 };
 
 var plugins = [
-	new WebpackCleanupPlugin(),	
+	//new WebpackCleanupPlugin(),	
 	new ExtractTextPlugin("[name].min.css"),
 	new CopyWebpackPlugin([{
 		from: path.join(__dirname, 'static'),
