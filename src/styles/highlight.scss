@@ -1,0 +1,51 @@
+section.project-highlight {
+	.project-number {
+		position: absolute;
+		top: 2;
+		left: 0;
+		font-size: 20em;
+	}
+	.project-body {	
+		padding: 20px;
+	}
+	.project-header div {
+		display: inline-block;
+		margin-bottom: 15px; 
+	}
+	.project-title {
+		font-size: 3.5em;
+		font-weight: 300;
+	}
+	.project-type {
+		border-radius: 35px;
+		padding: 10px;
+		font-weight: 600;
+		background-color: #cecfcf;
+		display: inline-block;
+	}
+	.project-story {
+		padding-top: 10px;
+		font-size: 1.3em;
+		text-align: justify;
+		min-height: 280px;
+	}
+	.project-links {
+
+	}
+	.web-source-buttons {
+		padding-top: 5px;
+	}
+	.carousel img {
+		max-height: 450px;
+	}
+}
+
+section#project-1 .project-number {
+	color: Orange;
+}
+section#project-2 .project-number {
+	color: SeaGreen;
+}
+section#project-3 .project-number {
+	color: Lime;
+}

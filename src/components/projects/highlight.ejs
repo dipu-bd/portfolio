@@ -1,40 +1,91 @@
-<% 
-models.Website.projects.forEach(function(name) {
-	var project = models.Projects[name];	
-});
+<%
+models.Website.projects.forEach(function(id, index) {
+	var project = models.Projects[id];
+	if(!project) return;
 %>
 
-<section>
+<section id="project-<%= index+1 %>" class="project-highlight">
 	<div class="container">
-		<div class="row">
-			<div class="hidden-xs col-sm-1">
-				<span style="font-size: 15em">1</span>
+		<div class="project-header">
+			<div class="project-number">
+				<%= index + 1 %>
+			</div>
+			<div class="project-title">
+				<%= project.title %>
+			</div>
+			<div class="project-types">
+				<% project.types.forEach(function(type) { %>
+					<span class="project-type"><%= type %></span>
+				<%}); %>
+			</div>
+		</div>
+		<div class="row project-body">
+			<div class="col-md-4">
+				<div class="project-story">
+					<%= project.story %>
+				</div>
+				<div class="project-links">
+					<% if('download' in project.links) { %>
+					<a href="<%= project.links.download %>" class="btn btn-success btn-block btn-lg">
+						<i class="fa fa-download"></i> Download This
+					</a>
+					<% } %>
+					<% if('demo' in project.links) { %>
+					<a href="<%= project.links.download %>" class="btn btn-success btn-block btn-lg">
+						<i class="fa fa-eye"></i> View A Demo
+					</a>
+					<% } %>
+					<div class="web-source-buttons">
+							<% if('web' in project.links) { %>
+							<a href="<%= project.links.web %>" class="btn btn-default btn-lg btn-block">
+								<i class="fa fa-globe"></i> Website
+							</a>
+							<% } %>
+							<% if('source' in project.links) { %>
+							<a href="<%= project.links.source %>" class="btn btn-default btn-lg btn-block">
+								<i class="fa fa-github-square"></i> Source
+							</a>
+							<% } %>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8">
+
+			<div id="carousel-<%= id %>" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<% project.images.forEach(function(d, i) { %>
+						<li data-target="#carousel-<%= id %>" data-slide-to="<%= i %>" class="<%= (i== 0) ? 'active' : ''%>"></li>
+						<% }); %>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<% project.images.forEach(function(image, i) { %>
+						<div class="item <%= (i==0) ? 'active' : '' %>">
+							<img src="static/<%= id %>/<%= image.src %>" alt="<%= image.alt || '' %>">
+							<div class="carousel-caption">
+								<h3><%= image.alt || '' %></h3>
+								<p><%= image.caption || '' %></p>
+							</div>
+						</div>
+						<% }); %>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-<%= id %>" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-<%= id %>" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div><!-- #/.carousel -->
 
 			</div>
 		</div>
 	</div>
 </section>
 
-
-<section>
-	<div class="container">
-		<div class="row" >
-			<div class="hidden-xs col-sm-2">
-				<span style="font-size: 15em">2</span>
-
-			</div>
-		</div>
-	</div>
-</section>
-
-
-<section>
-	<div class="container">
-		<div class="row" >
-			<div class="hidden-xs col-sm-2">
-				<span style="font-size: 15em">3</span>
-
-			</div>
-		</div>
-	</div>
-</section>
+<% }); %>
