@@ -1,15 +1,12 @@
-const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
 const webpack = require('webpack');
-const gracefulFs = require('graceful-fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
-gracefulFs.gracefulify(fs);
 var release = (process.env.NODE_ENV === 'production');
 
 module.exports = {
