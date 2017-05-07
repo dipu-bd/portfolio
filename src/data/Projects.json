@@ -4,6 +4,7 @@
 		"type": [ "Windows", "Desktop Application", "Utility" ],
 		"skills": [ "csharp", "winforms", ".net", "vstudio", "nsis", "desktop", "software", "api" ],
 		"story": "This software aims to provide a useful and informative tool to help users with their programming practice. Almost every features of <a href=\"uhunt.felix-halim.net\">uHunt</a> has been included. Additionally, it has code editing, debugging and customizable problem list view options.",
+		"logo": "icon.png",
 		"links": {
 			"web": "https://dipu-bd.github.com/UVA-Arena",
 			"source": "https://github.com/dipu-bd/UVA-Arena",
@@ -48,6 +49,7 @@
 			"demo": "http://depression.sustcse12.xyz",
 			"source": "https://github.com/dipu-bd/depression-detection-system"
 		},
+		"logo": "logo.png",
 		"images": [{
 			"src": "landing.png",
 			"alt": "The Landing Page"
@@ -66,6 +68,16 @@
 	"tuntuni": {
 		"name": "Tuntuni",
 		"type": ["Desktop Application", "Communication System"],
-		"skills": ""
+		"skills": ["java", "swing", "sockets", "maven"],
+		"story": "Tuntuni is an application for peer to peer real time video conferencing and messaging within local network. It automatically discovers connected users withing same local networks. Provides a real time video conferencing, simple text messaging features with an attractive user interface.",
+		"logo": "logo.png",
+		"links": {
+			"source": "https://github.com/dipu-bd/Tuntuni",
+			"download": "https://github.com/dipu-bd/Tuntuni/releases/download/1.0-alpha1/Tuntuni-1.0-SNAPSHOT.exe"
+		},
+		"images": [{
+			"src": "snap.png",
+			"alt": "Snapshot of Tuntuni"
+		}]
 	}
 }
