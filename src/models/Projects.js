@@ -1,5 +1,5 @@
 const _ = require('lodash');
-var Skills = require('../data/Skills.json');
+var Projects = require('../data/Projects.json');
 
 //
 // Enhance module
@@ -9,7 +9,7 @@ var Skills = require('../data/Skills.json');
 //
 // Export the modules
 //
-module.exports = Skills;
+module.exports = Projects;
 
 
 //
