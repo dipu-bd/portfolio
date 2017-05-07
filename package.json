@@ -9,7 +9,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=development webpack --config=webpack.config.js --progress --hide-modules --colors",
     "watch": "cross-env NODE_ENV=development webpack --config=webpack.config.js --progress --watch --watch-poll --hide-modules --colors",
-    "hot": "cross-env NODE_ENV=development webpack-dev-server --port 8000 --config=webpack.config.js --inline --hot --colors",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --port 8000 --open --config=webpack.config.js --inline --hot --colors",
     "release": "cross-env NODE_ENV=production webpack --config=webpack.config.js --progress --hide-modules --colors"
   },
   "devDependencies": {
