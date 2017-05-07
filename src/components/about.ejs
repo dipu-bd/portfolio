@@ -1,0 +1,42 @@
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<img src="./static/propic.jpg" alt="ProPic" class="img-circle img-reponsive">
+			</div>
+			<div class="col-md-8">
+				<div class="col-xs-12 text-center" style="margin-bottom: 15px; font-size: 2em">
+					About Me
+				</div>
+				<div style="text-align: justify; font-size: 1em">
+					<%= models.Personal.about() %>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<style type="text/css" scoped>
+		#about .row { 
+			font-size: 1.4em;
+		}
+		#about img {
+			box-shadow: 3px 3px 10px #669;
+			height: 220px;	
+			margin: 10px;
+		}
+		@media (min-width: 992px) { 
+			#about img {
+				height: 260px;
+				margin-top: 30px;			
+			}
+		}
+		@media (min-width: 1200px) { 
+			#about .row { 
+				font-size: 1.5em;
+			}
+			#about img {
+				height: 300px;
+				margin: 20px;			
+			}
+		}
+	</style>
+</section>
