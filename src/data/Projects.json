@@ -9,8 +9,34 @@
 			"source": "https://github.com/dipu-bd/UVA-Arena",
 			"download": "https://github.com/dipu-bd/UVA-Arena/releases/download/1.7/UVA_Arena_1.7_setup.exe"
 		},
-		"screenshots": [
-		]
+		"screenshots": [{
+			"src": "landing.png",
+			"alt": "UVA Arena Screenshots"
+		}, {
+			"src": "problems.png",
+			"alt": "Problems Tab"
+		}, {
+			"src": "codes.png", 
+			"alt": "Codes Tab"
+		}, {
+			"src": "judge_status.png",
+			"alt": "Latest Judge Status Tab"
+		},, {
+			"src": "user_status.png",
+			"alt": "User Status Tab"
+		}, {
+			"src": "world_rank.png",
+			"alt": "World Rank Tab"
+		}, {
+			"src": "graph.png",
+			"alt": "User Status Graph"
+		}, {
+			"src": "progress_tracker.png",
+			"alt": "Overall Progress Viewer"
+		}, {
+			"src": "user_login.png",
+			"alt": "Settings Window"
+		}]
 	},
 
 	"depression-detection-system": {
@@ -23,17 +49,22 @@
 			"source": "https://github.com/dipu-bd/depression-detection-system"
 		},
 		"screenshots": [{
-			"src": "static/depression-detection-system/landing.png",
+			"src": "landing.png",
 			"alt": "The Landing Page"
 		}, {
-			"src": "static/depression-detection-system/test.png",
+			"src": "test.png",
 			"alt": "The Test Page"
 		}, {
-			"src": "static/depression-detection-system/report.png",
+			"src": "report.png",
 			"alt": "The Report Page"
 		}, {
-			"src": "static/depression-detection-system/print.png",
+			"src": "print.png",
 			"alt": "Generated Report For Printing"
 		}]
+	},
+
+	"tuntuni": {
+		"name": "Tuntuni",
+		"type": ["Desktop Application", "Communication System"]
 	}
 }
