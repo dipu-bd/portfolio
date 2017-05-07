@@ -1,7 +1,4 @@
 {
-	//
-	// Languages
-	//
 	"c": {
 		"display": "C",
 		"category": "Language"
@@ -39,9 +36,7 @@
 		"category": [ "Technology", "Language", "Desktop" ]
 	},
 
-	//
-	// Database
-	//
+
 	"mysql": {
 		"display": "MySQL",
 		"category": [ "Database", "Desktop", "Web", "Tools" ]
@@ -51,9 +46,7 @@
 		"category": [ "Database", "Desktop", "Web", "Tools" ]
 	},
 
-	//
-	// Desktop Technology
-	//
+
 	"winforms": {
 		"display": "Windows Form Application",
 		"category": [ "Technology", "Desktop" ]
@@ -73,11 +66,9 @@
 	"junit": {
 		"display": "JUnit",
 		"category": [ "Technology", "Desktop", "Testing" ]
-	}
+	},
 
-	//
-	// Web Technology : Back End
-	//
+
 	"nodejs": {
 		"display": "NodeJS",
 		"category": [ "Technology", "Web", "Back-End" ]
@@ -107,9 +98,7 @@
 		"category": [ "Technology", "Web", "Templating Language" ]
 	},
 
-	//
-	// Web Technology : Front End
-	//
+
 	"css": {
 		"display": "CSS",
 		"category": [ "Technology", "Web", "Front-End" ]
@@ -136,9 +125,7 @@
 	},
 
 
-	//
-	// Tools
-	//
+
 	"git": {
 		"display": "Git",
 		"category": "Tools"
@@ -220,9 +207,7 @@
 		"category": [ "Tools", "Operating System" ]
 	},
 
-	//
-	// Concepts
-	//
+
 	"image": {
 		"display": "Image processing",
 		"category": "Concept"
@@ -237,7 +222,7 @@
 	},
 	"api": {
 		"display": "Web API",
-		"category": "Concept",
+		"category": "Concept"
 	},
 	"web": {
 		"display": "Web Development",
@@ -264,9 +249,8 @@
 		"category": "Concept"
 	},
 
-	//
-	// Others
-	// 
+
+
 	"opencv": {
 		"display": "OpenCV",
 		"category": [ "Library", "Python" ]

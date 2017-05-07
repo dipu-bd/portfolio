@@ -2,5 +2,5 @@
 	"title": "Sudipto Chandra - Portfolio",
 	"author": "Sudipto Chandra (dipu.sudipta@gmail.com)",
 	"description": "A personal portfolio website",
-	"top-projects": [ "uva-arena", "depression-detection-system", "tuntuni" ]
+	"projects": [ "uva-arena", "depression-detection-system", "tuntuni" ]
 }
