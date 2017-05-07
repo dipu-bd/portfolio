@@ -1,3 +1,7 @@
+@import './_variables.scss';
+@import './landing.scss';
+@import './about.scss';
+
 section {
 	display: flex;
 	flex-direction: column;
@@ -8,22 +12,14 @@ section {
 	overflow: hidden;
 }
 
-section:nth-child(1) {
-	background: #e0f2f1;
-}
-
-section:nth-child(2) {
-	background: #f4ff81;
-}
-
-section:nth-child(3) {
-	background: #ffd740;
-}
-
-section:nth-child(4) {
-	background: #b6ff5c;
-}
-
-section:nth-child(5) {
-	background: #fff176;
+@each $section, $color in
+			(#landing, #e0f2f1),
+			(#about, #f4ff81),
+			(#project-1, #ffd740),
+			(#project-2, #b6ff5c),
+			(#project-3 #fff176)
+{
+	section#{$section} {
+		background-color: $color;
+	}
 }

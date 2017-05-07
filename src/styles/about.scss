@@ -1,0 +1,27 @@
+#about {
+	@media #{$sm-max} {
+		.row {
+			font-size: 1.4em;
+		}
+		img {
+			box-shadow: 3px 3px 10px #669;
+			height: 220px;
+			margin: 10px;
+		}
+	}
+	@media #{$md-lg} {
+		img {
+			height: 260px;
+			margin-top: 30px;
+		}
+	}
+	@media #{$lg-min} {
+		.row {
+			font-size: 1.5em;
+		}
+		img {
+			height: 300px;
+			margin: 20px;
+		}
+	}
+}
