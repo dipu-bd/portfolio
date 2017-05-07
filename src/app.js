@@ -1,8 +1,8 @@
 //
 // Styles
 //
-require('bootstrap/dist/css/bootstrap.css');
-require('./style.css');
+require('bootstrap-sass/assets/stylesheets/_bootstrap.scss');
+require('./styles/main.scss');
 
 //
 // Scripts

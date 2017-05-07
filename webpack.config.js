@@ -40,21 +40,29 @@ module.exports = {
 				test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/, 
 				loader: 'url-loader?limit=100000' 
 			}, 
-			// converts all css files to single css file in output dir
+			// compiles scss files using sass-loader
 			{
-				test: /\.css$/,
-				//use: [ 'style-loader', 'css-loader' ]
+				test: /\.(css|scss)$/,
 				use: ExtractTextPlugin.extract({
-					use: 'css-loader'
+					use: [{
+						loader: "css-loader"
+					}, {
+						loader: "sass-loader"
+					}],
+					// use style-loader in development
+					fallback: "style-loader"
 				})
-			},
+			}
 		]
 	}
 };
 
 var plugins = [
 	//new WebpackCleanupPlugin(),	
-	new ExtractTextPlugin("[name].min.css"),
+	new ExtractTextPlugin({
+		filename: "[name].min.css",
+		//disable: !release // extract only in production
+	}),
 	new CopyWebpackPlugin([{
 		from: path.join(__dirname, 'static'),
 		to: 'static'
