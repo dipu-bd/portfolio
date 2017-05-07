@@ -46,7 +46,7 @@
 		"skills": [ "web", "javascript", "html", "css", "meteor", "blaze", "nodejs", "materialize"],
 		"story": "Many people suffer from depression in some period of their life. In most cases, depression is curable with proper medication in proper time. This site was built to increase awareness and encourge people for their mental healthcare.",
 		"links": {
-			"demo": "http://depression.sustcse12.xyz",
+			"web": "http://depression.sustcse12.xyz",
 			"source": "https://github.com/dipu-bd/depression-detection-system"
 		},
 		"logo": "logo.png",

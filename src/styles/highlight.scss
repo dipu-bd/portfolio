@@ -2,21 +2,32 @@ section.project-highlight {
 	position: relative;
 
 	.project-number-large {
+		position: absolute;
+		top: 0px;
+		left: 0px;	
 		opacity: 0.75;
 		font-size: 20em;
-		position: absolute;
-		top: 50px;
-		left: 5px;	
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	}
 
 	.project-header {
 		margin-bottom: 30px; 
-		div {
-			text-align: center;
-		}	
+		text-align: center;
+		.project-number-small {
+			box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+			font-size: 3.5em;
+			padding: 0px 20px;
+			border-radius: 50%;
+			opacity: 0.9;
+			display: inline-block;
+			@media #{$md-min} {
+				display: none;
+			}
+		}
 		.project-title {
 			font-size: 3.5em;
 			font-weight: 300;
+			padding: 10px;
 		}
 		.project-type {			
 			padding: 8px 12px;
@@ -45,45 +56,50 @@ section.project-highlight {
 			}
 		}
 	}
-	.carousel-caption {
-		color: white;
-		border-radius: 20px;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-		background: rgba(0, 0, 0, 0.5);
-		padding: 12px 20px;
-		* {
-			margin: 0;
-			padding: 5px;
+
+	.carousel {
+		.carousel-caption {
+			color: white;
+			border-radius: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			background: rgba(0, 0, 0, 0.5);
+			padding: 12px 20px;
+			* {
+				margin: 0;
+				padding: 5px;
+			}
 		}
-	}
-	.carousel-image {
-		background-color: DarkSlateGray;
-		text-align: center;
-		img {
-			object-fit: contain;
-			display: inline;
-			@media #{$sm-max} {
-				width: 100%;
-				height: 200px;
-			}
-			@media #{$md-max} {
-				width: 100%;
-				height: 400px;
-			}
-			@media #{$lg-min} {
-				width: 100%;
-				height: 450px;
+		.carousel-image {
+			background-color: transparent;
+			text-align: center;
+			img {
+				object-fit: contain;
+				display: inline;
+				@media #{$sm-max} {
+					width: 100%;
+					height: 200px;
+				}
+				@media #{$md-max} {
+					width: 100%;
+					height: 400px;
+				}
+				@media #{$lg-min} {
+					width: 100%;
+					height: 450px;
+				}
 			}
 		}
 	}
 }
 
-section#project-1 .project-number {
-	color: Orange;
-}
-section#project-2 .project-number {
-	color: SeaGreen;
-}
-section#project-3 .project-number {
-	color: Lime;
+@each $index, $color in (1, Orange), (2, #A5D6A7), (3, Lime) 
+{
+	section#project-#{$index} { 
+		.project-number-large {
+			color: $color;
+		}
+		.project-number-small {
+			background-color: $color;
+		}
+	}	
 }

@@ -8,34 +8,14 @@ section {
 	overflow: hidden;
 }
 
-@each $section, $color in
+@each $section, $color in 
 			(#landing, #e0f2f1),
-			(#about, #f4ff81),
-			(#project-1, #ffd740),
-			(#project-2, #b6ff5c),
+			(#about, #f4ff81), 
+			(#project-1, #ffd740), 
+			(#project-2, #b6ff5c), 
 			(#project-3 #fff176)
 {
 	section#{$section} {
 		background-color: $color;
 	}
 }
-
-.star-six { 
-	width: 0; 
-	height: 0; 
-	border-left: 50px solid transparent; 
-	border-right: 50px solid transparent; 
-	border-bottom: 100px solid red; 
-	position: relative; 
-	
-	:after { 
-	width: 0; 
-	height: 0; 
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent; 
-	border-top: 100px solid red; 
-	position: absolute; 
-	content: ""; 
-	top: 30px; 
-	left: -50px; 
-} 
