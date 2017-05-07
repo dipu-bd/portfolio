@@ -1,28 +1,25 @@
 <section id="landing">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-offset-2">
-				<div style="font-size: 3.5em">Hi!</div>
-				<div style="font-size: 2.5em">I'm <%= models.Personal.name %></div>
-				<div style="font-size: 1.5em"><%= models.Personal.intro %></div>
-			</div>
-		</div>
+	<div>
+		<div style="font-size: 3.5em">Hi!</div>
+		<div style="font-size: 2.5em">I'm <%= models.Personal.name %></div>
+		<div style="font-size: 1.5em"><%= models.Personal.intro %></div>
 	</div>
-	<style type="text/css" scoped>
-		@media (min-width: 768px) {
-			#landing .row { 
-				font-size: 1.5em;
-			}
-		}
-		@media (min-width: 992px) {
-			#landing .row { 
-				font-size: 2em;
-			}
-		}
-		@media (min-width: 1200px) {
-			#landing .row { 
-				font-size: 2.5em;
-			}
-		}
-	</style>
 </section>
+
+<style type="text/css" scoped>
+	@media (min-width: 768px) {
+		div { 
+			font-size: 1.5em;
+		}
+	}
+	@media (min-width: 992px) {
+		div { 
+			font-size: 2em;
+		}
+	}
+	@media (min-width: 1200px) {
+		div { 
+			font-size: 2.5em;
+		}
+	}
+</style>
