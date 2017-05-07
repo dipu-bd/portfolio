@@ -90,10 +90,6 @@
 		"display": "MeteorJS",
 		"category": [ "Technology", "Web", "Back-End", "Framework" ]
 	},
-	"meteor": {
-		"display": "VueJS",
-		"category": [ "Technology", "Web", "Front-End", "Framework" ]
-	},
 	"blaze": {
 		"display": "Meteor Blaze",
 		"category": [ "Technology", "Web", "Templating Language" ]
@@ -110,6 +106,10 @@
 	//
 	// Web Technology : Front End
 	//
+	"css": {
+		"display": "CSS",
+		"category": [ "Technology", "Web", "Front-End" ]
+	},
 	"jquery": {
 		"display": "JQuery",
 		"category": [ "Technology", "Web", "Front-End" ]
