@@ -62,6 +62,10 @@
 		"display": "Microsoft .NET",
 		"category": [ "Technology", "Desktop", "Framework" ]
 	},
+	"swing": {
+		"display": "Swing",
+		"category": ["Technology", "Desktop", "Framework"]
+	},
 	"javafx": {
 		"display": "JavaFX",
 		"category": [ "Technology", "Desktop", "Framework" ]
