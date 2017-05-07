@@ -9,7 +9,7 @@
 			"source": "https://github.com/dipu-bd/UVA-Arena",
 			"download": "https://github.com/dipu-bd/UVA-Arena/releases/download/1.7/UVA_Arena_1.7_setup.exe"
 		},
-		"screenshots": [{
+		"images": [{
 			"src": "landing.png",
 			"alt": "UVA Arena Screenshots"
 		}, {
@@ -48,7 +48,7 @@
 			"demo": "http://depression.sustcse12.xyz",
 			"source": "https://github.com/dipu-bd/depression-detection-system"
 		},
-		"screenshots": [{
+		"images": [{
 			"src": "landing.png",
 			"alt": "The Landing Page"
 		}, {
@@ -65,6 +65,7 @@
 
 	"tuntuni": {
 		"name": "Tuntuni",
-		"type": ["Desktop Application", "Communication System"]
+		"type": ["Desktop Application", "Communication System"],
+		"skills": ""
 	}
 }
