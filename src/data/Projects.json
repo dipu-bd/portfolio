@@ -3,10 +3,6 @@
 		"name": "UVA Arena",
 		"type": [ "Windows", "Desktop Application", "Utility" ],
 		"skills": [ "csharp", "winforms", ".net", "vstudio", "nsis", "desktop", "software", "api" ],
-		"commits": "90+",
-		"release": "7",
-		"stars": "20+",
-		"downloads": "6000+",
 		"story": "This software aims to provide a useful and informative tool to help users with their programming practice. Almost every features of <a href=\"uhunt.felix-halim.net\">uHunt</a> has been included. Additionally, it has code editing, debugging and customizable problem list view options.",
 		"links": {
 			"web": "https://dipu-bd.github.com/UVA-Arena",
@@ -15,5 +11,29 @@
 		},
 		"screenshots": [
 		]
+	},
+
+	"depression-detection-system": {
+		"name": "Depression Detection System",
+		"type": ["Web Application"],
+		"skills": [ "web", "javascript", "html", "css", "meteor", "blaze", "nodejs", "materialize"],
+		"story": "Many people suffer from depression in some period of their life. In most cases, depression is curable with proper medication in proper time. This site was built to increase awareness and encourge people for their mental healthcare.",
+		"links": {
+			"demo": "http://depression.sustcse12.xyz",
+			"source": "https://github.com/dipu-bd/depression-detection-system"
+		},
+		"screenshots": [{
+			"src": "static/depression-detection-system/landing.png",
+			"alt": "The Landing Page"
+		}, {
+			"src": "static/depression-detection-system/test.png",
+			"alt": "The Test Page"
+		}, {
+			"src": "static/depression-detection-system/report.png",
+			"alt": "The Report Page"
+		}, {
+			"src": "static/depression-detection-system/print.png",
+			"alt": "Generated Report For Printing"
+		}]
 	}
 }
