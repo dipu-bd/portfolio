@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "repository": "https://github.com/dipu-bd/dipu-bd.github.io",
   "author": "dipu-bd <dipu.sudipta@gmail.com>",
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "scripts": {
     "build": "cross-env NODE_ENV=development webpack --config=webpack.config.js --progress --hide-modules --colors",
     "watch": "cross-env NODE_ENV=development webpack --config=webpack.config.js --progress --watch --watch-poll --hide-modules --colors",
