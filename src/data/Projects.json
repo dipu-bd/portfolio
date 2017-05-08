@@ -40,9 +40,10 @@
 		}]
 	},
 
+
 	"depression-detection-system": {
 		"title": "Depression Detection System",
-		"types": ["Web Application"],
+		"types": ["Web Application", "Online Test", "Psychology"],
 		"skills": [ "web", "javascript", "html", "css", "meteor", "blaze", "nodejs", "materialize"],
 		"story": "Many people suffer from depression in some period of their life. In most cases, depression is curable with proper medication in proper time. This site was built to increase awareness and encourge people for their mental healthcare.",
 		"links": {
@@ -67,9 +68,10 @@
 		}]
 	},
 
+
 	"tuntuni": {
 		"title": "Tuntuni",
-		"types": ["Desktop Application", "Communication System"],
+		"types": ["Desktop Application", "Communication", "Local Area Network"],
 		"skills": ["java", "swing", "sockets", "maven"],
 		"story": "Tuntuni is an application for peer to peer real time video conferencing and messaging within local network. It automatically discovers connected users withing same local networks. Provides a real time video conferencing, simple text messaging features with an attractive user interface.",
 		"logo": "logo.png",
@@ -86,7 +88,7 @@
 
 	"angelnetbd": {
 		"title": "Bangladesh Angel Network",
-		"types": ["Web Application"],
+		"types": ["Web Application", "Promote Startups"],
 		"skills": ["web", "sails", "nodejs", "html", "css", "javascript", "bower", "npm", "ejs", "passport", "mysql"],
 		"story": "An Angel Network is a network of investors who are interested in investing in startups and owning a part of its share. This is a platform to bring entrepreneurs and investors together.",
 		"logo": "logo.png",
@@ -100,7 +102,7 @@
 
 	"vaccineforchild": {
 		"title": "Vaccine For Child",
-		"types": ["Web Application"],
+		"types": ["Web Application", "Child-Care"],
 		"skills": ["web", "nodejs", "html", "css", "javascript", "npm", "ejs", "express", "mysql", "twilio", "nodemailer", "bootstrap"],
 		"story": "This system was designed to notify parents about the vaccination schedule of their children. It uses email or sms to send notification to parent about the upcoming schedule.",
 		"logo": "favicon.png",
@@ -108,5 +110,19 @@
 			"source": "https://github.com/dipu-bd/VaccineForChild"
 		},
 		"images": []
+	},
+
+
+	"labexam": {
+		"title": "Lab Exam Taker",
+		"types": ["Desktop Application", "Kiosk Environment"],
+		"skills": [],
+		"story": [],
+		"logo": "",
+		"links": {
+			"source": "",
+			"download": ""
+		},
+		"images": [ ]
 	}
 }
