@@ -73,6 +73,10 @@
 		"display": "NodeJS",
 		"category": [ "Technology", "Web", "Back-End" ]
 	},
+	"express": {
+		"display": "ExpressJS",
+		"category": [ "Technology", "Web", "Back-End", "Framework" ]
+	},
 	"laravel": {
 		"display": "Laravel",
 		"category": [ "Technology", "Web", "Back-End", "Framework" ]
@@ -278,5 +282,13 @@
 	"sockets": {
 		"display": "Java Socket Programming", 
 		"category": ["Technology", "Desktop", "Library"]
+	},
+	"nodemailer": {
+		"display": "Node Mailer", 
+		"category": ["Technology", "Web", "Library"]
+	},
+	"twilio": {
+		"display": "Twilio - SMS sender", 
+		"category": ["Technology", "Web", "Library"]
 	}
 }

@@ -91,9 +91,22 @@
 		"story": "An Angel Network is a network of investors who are interested in investing in startups and owning a part of its share. This is a platform to bring entrepreneurs and investors together.",
 		"logo": "logo.png",
 		"links": {
-			"source": "https://github.com/angelnetbd/angelnetbd",
+			"source": "https://github.com/angelnetbd/angelnetbd"
 		},
 		"images": [ ]
 
+	},
+
+
+	"vaccineforchild": {
+		"title": "Vaccine For Child",
+		"types": ["Web Application"],
+		"skills": ["web", "nodejs", "html", "css", "javascript", "npm", "ejs", "express", "mysql", "twilio", "nodemailer", "bootstrap"],
+		"story": "This system was designed to notify parents about the vaccination schedule of their children. It uses email or sms to send notification to parent about the upcoming schedule.",
+		"logo": "favicon.png",
+		"links": {
+			"source": "https://github.com/dipu-bd/VaccineForChild"
+		},
+		"images": []
 	}
 }
