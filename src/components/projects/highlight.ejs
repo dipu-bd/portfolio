@@ -5,17 +5,23 @@ models.Website.projects.forEach(function(id, index) {
 %>
 
 <section id="project-<%= index+1 %>" class="project-highlight"> 
-	<div class="project-number-large hidden-sm hidden-xs">
-		<%= index + 1 %>
-	</div>
+	<div class="container">  
 
-	<div class="container">   
+		<!-- Project number -->
+		<div class="row">
+			<div class="col-xs-12 project-number">
+				<div class="large hidden-sm hidden-xs">
+					<%= index + 1 %>
+				</div>
+				<div class="small">
+					<%= index + 1 %>
+				</div>
+			</div>
+		</div>
+	 
 		<!-- Project Header -->
 		<div class="row project-header">
 			<div class="col-xs-12">
-				<div class="project-number-small">
-					<%= index + 1 %>
-				</div>
 				<div class="project-title">
 					<% if('logo' in project) { %>
 					<img src="<%= require('../../assets/' + id + '/' + project.logo) %>" alt="<%= project.name %>-logo" style="height: 64px">

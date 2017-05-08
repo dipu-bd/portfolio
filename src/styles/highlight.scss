@@ -1,23 +1,21 @@
 section.project-highlight {
 	position: relative;
 
-	.project-number-large {
-		position: absolute;
-		top: 0px;
-		left: 0px;	
-		opacity: 0.75;
-		font-size: 20em;
-		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
-
-	.project-header {
-		margin-bottom: 30px; 
+	.project-number {
 		text-align: center;
-		@media #{$md-max} {
-			margin-bottom: 10px;
+		position: relative;
+		.large {
+			position: absolute;
+			top: 64px;
+			left: -32px;	
+			opacity: 0.75;
+			font-size: 20em;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			@media #{$md-max} {
+				font-size: 17em;
+			}
 		}
-
-		.project-number-small {
+		.small {
 			box-shadow: 0 0 10px rgba(0,0,0, 0.5);
 			font-size: 3.5em;
 			padding: 0px 20px;
@@ -26,7 +24,15 @@ section.project-highlight {
 			display: inline-block;
 			@media #{$md-min} {
 				display: none;
-			}
+			}		
+		}
+	}
+
+	.project-header {
+		margin-bottom: 30px; 
+		text-align: center;
+		@media #{$md-max} {
+			margin-bottom: 10px;
 		}
 		.project-title {
 			font-size: 3.5em;
@@ -48,9 +54,9 @@ section.project-highlight {
 		position: relative;
 		.project-story {
 			padding: 5px;
-			padding-top: 10px;			
+			padding-top: 10px;
 			font-size: 1.3em;
-			text-align: justify;		
+			text-align: justify;
 			@media #{$xs-max} {
 				font-size: 1.0em;
 			}
@@ -121,10 +127,10 @@ section.project-highlight {
 				(#project-3, Lime) 
 {
 	section#{$id} { 
-		.project-number-large {
+		.project-number .large {
 			color: $color;
 		}
-		.project-number-small {
+		.project-number .small {
 			background-color: $color;
 		}
 	}
