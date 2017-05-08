@@ -124,7 +124,7 @@
 		}]
 	},
 
-	"vaccineforchild": {
+	"vaccine-for-child": {
 		"title": "Vaccine For Child",
 		"types": ["Web Application", "Child-Care"],
 		"skills": ["web", "nodejs", "html", "css", "javascript", "npm", "ejs", "express", "mysql", "twilio", "nodemailer", "bootstrap"],
@@ -160,6 +160,14 @@
 		}]
 	},
 
+	"course_feedback": {
+
+	},
+
+	"alpr-bd": {
+
+	},
+
 	"lab-exam": {
 		"title": "Lab Exam Taker",
 		"types": ["Desktop Application", "Kiosk Environment"],
@@ -171,5 +179,54 @@
 			"download": ""
 		},
 		"images": [ ]
+	},
+
+	"flash-copyer": {
+
+	},
+
+	"process-scheduling": {
+
+	},
+
+	"ace-fx": {
+
+	},
+
+	"uva-problem-category": {
+
+	},
+
+	"desktop-notes": {
+
+	},
+
+	"cryptography": {
+
+	},
+
+	"little-math": {
+
+	},
+
+	"simple-sudoku-solver": {
+
+	},
+
+	"web-address-book": {
+
+	},
+
+	"game-database": {
+
+	},
+
+	"viewer-integrated": {
+
+	},
+
+	"calculatorium": {
+
 	}
+
 }
