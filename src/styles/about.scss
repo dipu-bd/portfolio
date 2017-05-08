@@ -1,27 +1,39 @@
-section#about {
-	@media #{$sm-max} {
-		.row {
-			font-size: 1.4em;
+section#aboutme {
+	img {		
+		object-fit: contain;
+		box-shadow: 3px 3px 10px #669;
+		@media #{$sm-max} {
+			height: 150px;
+			margin-bottom: 15px;
+		}		
+		@media #{$md-lg} {
+			height: 250px;
+			margin-right: 10px;
 		}
-		img {
-			box-shadow: 3px 3px 10px #669;
-			height: 220px;
-			margin: 10px;
-		}
-	}
-	@media #{$md-lg} {
-		img {
-			height: 260px;
-			margin-top: 30px;
-		}
-	}
-	@media #{$lg-min} {
-		.row {
-			font-size: 1.5em;
-		}
-		img {
+		@media #{$lg-min} {
 			height: 300px;
-			margin: 20px;
+		}
+	}
+	.about-title {
+		margin-bottom: 15px; 
+		text-shadow: 1px 1px 5px #99a;
+		@media #{$sm-max} {
+			display: none;
+		}
+		@media #{$sm-md} {
+			font-size: 2.5em;
+		}
+		@media #{$lg-min} {
+			font-size: 3em;
+		}
+	}
+	.about-body {
+		text-align: justify; 
+		@media #{$md-max} {
+			font-size: 1.3em;
+		}
+		@media #{$lg-min} {
+			font-size: 1.5em;
 		}
 	}
 }

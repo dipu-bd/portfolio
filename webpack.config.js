@@ -3,10 +3,10 @@ const path = require('path');
 const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 //const CopyWebpackPlugin = require('copy-webpack-plugin');
+//const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 const development = (process.env.NODE_ENV !== 'production');
 
@@ -19,10 +19,10 @@ module.exports = {
 		filename: '[name].min.js'
 	},
 	devServer: {
-		contentBase: './bin',
-		inline: true,
+		//contentBase: '.bin', // contents not from webpack is served from here
+		inline: true, // output is serve from /
 		port: 8000,
-		open: false
+		open: true
 	},
 
 	module: {		
@@ -66,7 +66,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new WebpackCleanupPlugin(),
+		//new WebpackCleanupPlugin(),
 		new webpack.optimize.UglifyJsPlugin(),
 		new OptimizeCssAssetsPlugin(),
 		new ExtractTextPlugin({

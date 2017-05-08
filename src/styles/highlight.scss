@@ -13,6 +13,10 @@ section.project-highlight {
 	.project-header {
 		margin-bottom: 30px; 
 		text-align: center;
+		@media #{$md-max} {
+			margin-bottom: 10px;
+		}
+
 		.project-number-small {
 			box-shadow: 0 0 10px rgba(0,0,0, 0.5);
 			font-size: 3.5em;
@@ -36,6 +40,7 @@ section.project-highlight {
 			display: inline-block;
 			background-color: #696669;
 			color: white;
+			margin: 2px;
 		}
 	}
 
@@ -46,6 +51,9 @@ section.project-highlight {
 			padding-top: 10px;			
 			font-size: 1.3em;
 			text-align: justify;		
+			@media #{$xs-max} {
+				font-size: 1.0em;
+			}
 		}
 		.project-links {
 			padding-top: 10px;
@@ -57,7 +65,16 @@ section.project-highlight {
 		}
 	}
 
-	.carousel {
+	.carousel {		
+		.item {
+			@media #{$xs-max} {
+  				height: 250px;
+			}
+			@media #{$sm-max} {
+  				height: 300px;
+			}
+		}
+
 		.carousel-caption {
 			color: white;
 			border-radius: 20px;
@@ -75,15 +92,21 @@ section.project-highlight {
 			img {
 				object-fit: contain;
 				display: inline;
-				@media #{$sm-max} {
+				@media #{$xs-max} {
+					object-fit: cover;
 					width: 100%;
 					height: 200px;
+				};
+				@media #{$sm-max} {
+					width: 100%;
+					height: 250px;
 				}
 				@media #{$md-max} {
 					width: 100%;
-					height: 400px;
+					height: 350px;
 				}
 				@media #{$lg-min} {
+					object-fit: contain;
 					width: 100%;
 					height: 450px;
 				}
@@ -92,14 +115,17 @@ section.project-highlight {
 	}
 }
 
-@each $index, $color in (1, Orange), (2, #A5D6A7), (3, Lime) 
+@each $id, $color in 
+				(#project-1, Orange), 
+				(#project-2, #A5D6A7),
+				(#project-3, Lime) 
 {
-	section#project-#{$index} { 
+	section#{$id} { 
 		.project-number-large {
 			color: $color;
 		}
 		.project-number-small {
 			background-color: $color;
 		}
-	}	
+	}
 }
