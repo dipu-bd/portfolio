@@ -81,5 +81,19 @@
 			"src": "snap.png",
 			"alt": "Snapshot of Tuntuni"
 		}]
+	},
+
+
+	"angelnetbd": {
+		"title": "Bangladesh Angel Network",
+		"types": ["Web Application"],
+		"skills": ["web", "sails", "nodejs", "html", "css", "javascript", "bower", "npm", "ejs", "passport", "mysql"],
+		"story": "An Angel Network is a network of investors who are interested in investing in startups and owning a part of its share. This is a platform to bring entrepreneurs and investors together.",
+		"logo": "logo.png",
+		"links": {
+			"source": "https://github.com/angelnetbd/angelnetbd",
+		},
+		"images": [ ]
+
 	}
 }

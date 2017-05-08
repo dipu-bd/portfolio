@@ -103,6 +103,10 @@
 		"display": "CSS",
 		"category": [ "Technology", "Web", "Front-End" ]
 	},
+	"sass": {
+		"display": "SASS",
+		"category": [ "Technology", "Web", "Front-End" ]
+	},
 	"jquery": {
 		"display": "JQuery",
 		"category": [ "Technology", "Web", "Front-End" ]
@@ -117,6 +121,10 @@
 	},
 	"parallax": {
 		"display": "Parallax",
+		"category": [ "Technology", "Web", "Front-End" ]
+	},
+	"passport": {
+		"display": "Passport (oAuth)",
 		"category": [ "Technology", "Web", "Front-End" ]
 	},
 	"vue": {
@@ -160,6 +168,10 @@
 	},
 	"npm": {
 		"display": "NPM",
+		"category": [ "Tools", "Package Manager" ]
+	},
+	"bower": {
+		"display": "Bower",
 		"category": [ "Tools", "Package Manager" ]
 	},
 	"yarn": {
