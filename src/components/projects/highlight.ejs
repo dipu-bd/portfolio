@@ -4,12 +4,12 @@ models.Website.projects.forEach(function(id, index) {
 	if(!project) return;
 %>
 
-<section id="project-<%= index+1 %>" class="project-highlight">	
+<section id="project-<%= index+1 %>" class="project-highlight"> 
 	<div class="project-number-large hidden-sm hidden-xs">
 		<%= index + 1 %>
 	</div>
 
-	<div class="container">		
+	<div class="container">   
 		<!-- Project Header -->
 		<div class="row project-header">
 			<div class="col-xs-12">
@@ -28,13 +28,13 @@ models.Website.projects.forEach(function(id, index) {
 		</div><!-- #/.project-header -->
 
 		<!-- Project Body -->
-		<div class="project-body">			
+		<div class="project-body">      
 			<div class="row">
 				<div class="col-md-4 col-md-offset-1 project-story">
-					<%= project.story %>					
+					<%= project.story %>          
 				</div>
 				<div class="col-md-7 col-xs-12">
-					<!-- Carousel -->			
+					<!-- Carousel -->     
 					<div id="carousel-<%= id %>" class="carousel slide" data-ride="carousel">
 						<!-- Indicators -->
 						<ol class="carousel-indicators">
@@ -48,7 +48,7 @@ models.Website.projects.forEach(function(id, index) {
 							<% project.images.forEach(function(image, i) { %>
 							<div class="item <%= i ? '' : 'active' %>">
 								<div class="carousel-image">
-									<img src="static/<%= id %>/<%= image.src %>" alt="<%= image.alt || '' %>">
+									<img src="<%= require('../../assets/' + id + '/' + image.src) %>" alt="<%= image.alt || '' %>">
 								</div>
 								<div class="carousel-caption">
 									<h3><%= image.alt || '' %></h3>
@@ -70,7 +70,7 @@ models.Website.projects.forEach(function(id, index) {
 						<% } %>
 						<!-- #/.controls -->
 					</div><!-- #/.carousel -->
-				</div> <!-- #/.col -->				
+				</div> <!-- #/.col -->        
 			</div><!-- #/.row -->
 
 			<div class="row project-links">
