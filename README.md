@@ -12,4 +12,4 @@ This website is being built from scratch using WebPack.
   4. Development mode: `yarn hot`.
 
 ## License  
-	Licensed under MIT License.
+	Licensed under the Apache License 2.0
