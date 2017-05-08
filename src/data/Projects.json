@@ -92,7 +92,36 @@
 		"links": {
 			"source": "https://github.com/angelnetbd/angelnetbd"
 		},
-		"images": [ ]
+		"images": [{
+			"src": "landing.png",
+			"alt": "Homepage"
+		}, {
+			"src": "login.png",
+			"alt": "Login page"
+		}, {
+			"src": "profile.png",
+			"alt": "Profile page"
+		}, {
+			"src": "startups.png",
+			"alt": "Startups",
+			"caption": "List of posted startups"
+		}, {
+			"src": "startup_view.png",
+			"alt": "View of a startup",
+			"caption": "You can add your video, little descriptions etc"
+		}, {
+			"src": "messages.png", 
+			"alt": "Conversations"
+		}, {
+			"src": "window.png",
+			"alt": "Funding Window"
+		}, {
+			"src": "proposals.png",
+			"alt": "Proposals"
+		}, {
+			"src": "loading.png",
+			"alt": "Cool loading page"
+		}]
 	},
 
 	"vaccineforchild": {
