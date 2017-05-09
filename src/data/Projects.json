@@ -42,7 +42,7 @@
 
 	"depression-detection-system": {
 		"title": "Depression Detection System",
-		"types": ["Web Application", "Online Test", "Psychology"],
+		"types": ["Web Application", "Statistics", "Psychological Test"],
 		"skills": [ "web", "javascript", "html", "css", "meteor", "blaze", "nodejs", "materialize"],
 		"story": "Many people suffer from depression in some period of their life. In most cases, depression is curable with proper medication in proper time. This site was built to increase awareness and encourge people for their mental healthcare.",
 		"links": {
@@ -70,7 +70,7 @@
 	"tuntuni": {
 		"title": "Tuntuni",
 		"types": ["Desktop Application", "Communication", "Local Area Network"],
-		"skills": ["java", "swing", "sockets", "maven", "desktop", "networking"],
+		"skills": ["java", "fxml", "javafx" "sockets", "maven", "desktop", "networking"],
 		"story": "Tuntuni is an application for peer to peer real time video conferencing and messaging within local network. It automatically discovers connected users withing same local networks. Provides a real time video conferencing, simple text messaging features with an attractive user interface.",
 		"logo": "logo.png",
 		"links": {
@@ -161,17 +161,65 @@
 	},
 
 	"course_feedback": {
-
+		"title": "Course Feedback",
+		"types": ["Web Application", "Statistics"],
+		"skills": ["web", "laravel", "mysql", "php", "html", "css", "javascript", "jquery", "bootstrap", "blade", "sublime", "softeng", "mvc"],
+		"story": "To improve the quality of the courses, active collaboration with the students is required. This is a platform to take a survey of a course. Not only the respective department, but the alumni, or the job industries can use this platform for system as well.",
+		"links": {
+			"source": "https://github.com/nowshad-sust/course_feedback"
+		},
+		"images": [{
+			"src": "landing.png",
+			"alt": "Landing Page"
+		}, {
+			"src": "dashboard.png",
+			"alt": "Department Admin Panel"
+		}, {
+			"src": "admin_dash.png",
+			"alt": "Site Admin Panel"
+		}, {
+			"src": "student_dashboard.png",
+			"alt": "Student's Panel"
+		}, {
+			"src": "participate.png", 
+			"alt": "Particiapte Form"
+		}, {
+			"src": "survey_list.png",
+			"alt": "Survey List",
+			"caption": "Only department admin can see this"
+		}, {
+			"src": "verify.png",
+			"alt": "Verify User",
+			"caption": "Department admin must verify the user"
+		}, {
+			"src": "create_ques.png",
+			"alt": "Create Question",
+			"caption": "Only site admin can create question"
+		}, {
+			"src": "edit_ques.png",
+			"alt": "Edit Question"
+		}]
 	},
 
 	"alpr-bd": {
+		"title": "Automated Bangla License Plate Detection and Recognition",
+		"types": ["Desktop Application", "Thesis", "Image Processing"],
+		"skills": ["image", "problem", "python", "opencv", "numpy", "desktop", "anaconda", "latex"],
+		"story": "License plate recognition is an active field of research in many countries. In Bangladesh, there have been many researchs but no decent implementation of the system. This is an opensource project that challenged the problems and hardships of Bangla ALPR, and tried to solved it.",
+		"links": {
+			"source": "https://github.com/dipu-bd/alpr-bd",
+			"download": "https://github.com/dipu-bd/alpr-bd/archive/master.zip",
+			"report": "https://github.com/dipu-bd/alpr-bd/releases/download/1.0-alpha/report.pdf"			
+		}, 
+		"images": {
 
+		}
 	},
 
 	"lab-exam": {
 		"title": "Lab Exam Taker",
 		"types": ["Desktop Application", "Kiosk Environment"],
-		"skills": ["desktop"],
+		"skills": ["desktop", "java", "swing", "nsis", ""],
 		"story": [],
 		"logo": "",
 		"links": {
