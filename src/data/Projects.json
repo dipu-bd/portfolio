@@ -12,7 +12,7 @@
 		},
 		"images": [{
 			"src": "landing.png",
-			"alt": "UVA Arena Screenshots"
+			"alt": "UVA Arena Screen-shots"
 		}, {
 			"src": "problems.png",
 			"alt": "Problems Tab"
@@ -44,7 +44,7 @@
 		"title": "Depression Detection System",
 		"types": ["Web Application", "Statistics", "Psychological Test"],
 		"skills": [ "web", "javascript", "html", "css", "meteor", "blaze", "nodejs", "materialize"],
-		"story": "Many people suffer from depression in some period of their life. In most cases, depression is curable with proper medication in proper time. This site was built to increase awareness and encourge people for their mental healthcare.",
+		"story": "Many people suffer from depression in some period of their life. In most cases, depression is curable with proper medication in proper time. This site was built to increase awareness and encourage people for their mental health-care.",
 		"links": {
 			"web": "http://depression.sustcse12.xyz",
 			"source": "https://github.com/dipu-bd/depression-detection-system"
@@ -128,7 +128,7 @@
 		"title": "Vaccine For Child",
 		"types": ["Web Application", "Child-Care"],
 		"skills": ["web", "nodejs", "html", "css", "javascript", "npm", "ejs", "express", "mysql", "twilio", "nodemailer", "bootstrap"],
-		"story": "This system was designed to notify parents about the vaccination schedule of their children. It uses email or sms to send notification to parent about the upcoming schedule.",
+		"story": "This system was designed to notify parents about the vaccination schedule of their children. This uses Email or SMS notification to inform parents about the upcoming schedule.",
 		"logo": "favicon.png",
 		"links": {
 			"source": "https://github.com/dipu-bd/VaccineForChild"
@@ -142,7 +142,7 @@
 			"caption": "List of upcoming and past schedules"
 		}, {
 			"src": "children.png",
-			"alt": "Chindren"
+			"alt": "Children"
 		}, {
 			"src": "graph.png",
 			"alt": "Child growth",
@@ -173,16 +173,16 @@
 			"alt": "Landing Page"
 		}, {
 			"src": "dashboard.png",
-			"alt": "Department Admin Panel"
+			"alt": "Department-admin-panel"
 		}, {
 			"src": "admin_dash.png",
-			"alt": "Site Admin Panel"
+			"alt": "Site-admin-panel"
 		}, {
 			"src": "student_dashboard.png",
-			"alt": "Student's Panel"
+			"alt": "Student-panel"
 		}, {
 			"src": "participate.png", 
-			"alt": "Particiapte Form"
+			"alt": "Participate Form"
 		}, {
 			"src": "survey_list.png",
 			"alt": "Survey List",
@@ -205,7 +205,7 @@
 		"title": "Automated Bangla License Plate Detection and Recognition",
 		"types": ["Desktop Application", "Thesis", "Image Processing"],
 		"skills": ["image", "problem", "python", "opencv", "numpy", "desktop", "anaconda", "latex"],
-		"story": "License plate recognition is an active field of research in many countries. In Bangladesh, there have been many researchs but no decent implementation of the system. This is an opensource project that challenged the problems and hardships of Bangla ALPR, and tried to solved it.",
+		"story": "License plate recognition is an active field of research in many countries. In Bangladesh, there have been many research but no decent implementation of the system. This is an open-source project that challenged the problems and hardships of Bangla ALPR, and tried to solved it.",
 		"links": {
 			"source": "https://github.com/dipu-bd/alpr-bd",
 			"download": "https://github.com/dipu-bd/alpr-bd/archive/master.zip",
@@ -227,7 +227,7 @@
 		"title": "Lab Exam Taker",
 		"types": ["Desktop Application", "Kiosk Environment"],
 		"skills": ["desktop", "java", "swing", "nsis", "sockets", "networking", "windows", "netbeans"],
-		"story": ["Collecting codes from each students is a tedius work during programming lab exams. The target of this software is to solve this problem during Java Lab Exam. Additionally to avoid illegal acts of students, it runs in a kiosk like environment, that can not be closed unless the exam is finished. When students submit their problems with the client-side app, the codes are automatically stored in the server computer."],
+		"story": ["Collecting codes from each students is a tedious work during programming lab exams. The target of this software is to solve this problem during Java Lab Exam. Additionally to avoid illegal acts of students, it runs in a kiosk like environment, that can not be closed unless the exam is finished. When students submit their problems with the client-side application, the codes are automatically stored in the server computer."],
 		"logo": "server.png",
 		"links": {
 			"source": "https://github.com/dipu-bd/Lab-Exam",
@@ -241,7 +241,7 @@
 			"alt": "Session Editor"
 		}, {
 			"src": "ques_editor.png",
-			"alt": "Queston Editor"
+			"alt": "Question Editor"
 		}, {
 			"src": "exam_status.png",
 			"alt": "Exam Console"
@@ -266,7 +266,7 @@
 		}]
 	},
 
-	"flash-copyer": {
+	"flash-copier": {
 
 	},
 
