@@ -226,14 +226,16 @@
 	"lab-exam": {
 		"title": "Lab Exam Taker",
 		"types": ["Desktop Application", "Kiosk Environment"],
-		"skills": ["desktop", "java", "swing", "nsis", ""],
-		"story": [],
-		"logo": "",
+		"skills": ["desktop", "java", "swing", "nsis", "sockets", "networking", "windows", "netbeans"],
+		"story": ["Collecting codes from each students is a tedius work during programming lab exams. The target of this software is to solve this problem during Java Lab Exam. Additionally to avoid illegal acts of students, it runs in a kiosk like environment, that can not be closed unless the exam is finished. When students submit their problems with the client-side app, the codes are automatically stored in the server computer."],
+		"logo": "server.png",
 		"links": {
 			"source": "https://github.com/dipu-bd/Lab-Exam",
-			"download": ""
+			"download": "https://github.com/dipu-bd/Lab-Exam/archive/master.zip"
 		},
-		"images": [ ]
+		"images": [{
+			"src": ""
+		}]
 	},
 
 	"flash-copyer": {
