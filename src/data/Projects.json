@@ -211,9 +211,16 @@
 			"download": "https://github.com/dipu-bd/alpr-bd/archive/master.zip",
 			"report": "https://github.com/dipu-bd/alpr-bd/releases/download/1.0-alpha/report.pdf"			
 		}, 
-		"images": {
-
-		}
+		"images": [{
+			"src": "main.jpg",
+			"alt": "A sample image"
+		}, {
+			"src": "roi_01.jpg",
+			"alt": "Extracted plate"
+		}, {
+			"src": "segments.jpg",
+			"alt": "Segmented Characters"
+		}]
 	},
 
 	"lab-exam": {
