@@ -24,7 +24,7 @@ models.Website.projects.forEach(function(id, index) {
 			<div class="col-xs-12">
 				<div class="project-title">
 					<% if('logo' in project) { %>
-					<img src="<%= require('../../assets/' + id + '/' + project.logo) %>" alt="<%= project.name %>-logo" style="height: 64px">
+					<img src="<%= 'static/' + id + '/' + project.logo %>" alt="<%= project.name %>-logo" style="height: 64px">
 					<% } %>
 					<%= project.title %>
 				</div>
@@ -59,7 +59,7 @@ models.Website.projects.forEach(function(id, index) {
 							<% project.images.forEach(function(image, i) { %>
 							<div class="item <%= i ? '' : 'active' %>">
 								<div class="carousel-image">
-									<img src="<%= require('../../assets/' + id + '/' + image.src) %>" alt="<%= image.alt || '' %>">
+									<img src="<%= 'static/' + id + '/' + image.src %>" alt="<%= image.alt || '' %>">
 								</div>
 								<div class="carousel-caption">
 									<h3><%= image.alt || '' %></h3>

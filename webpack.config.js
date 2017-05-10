@@ -9,6 +9,17 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 //const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 const development = (process.env.NODE_ENV !== 'production');
+const config  = {
+	minify: (!development) && {
+			collapseWhitespace: true,
+			removeComments: true,
+			removeRedundantAttributes: true,
+			removeScriptTypeAttributes: true,
+			removeStyleLinkTypeAttributes: true
+		},
+
+};
+
 
 module.exports = {
 	entry: {
@@ -50,7 +61,7 @@ module.exports = {
 				test: /\.(woff|woff2|eot|ttf|svg)$/,
 				loader: 'url-loader?limit=100000'
 			},
-			// compiles scss files using sass-loader
+			// compiles sass files using sass-loader
 			{
 				test: /\.(css|scss)$/,
 				use: ExtractTextPlugin.extract({
@@ -74,22 +85,14 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/index.ejs',
-			minify: (!development) && {
-				collapseWhitespace: true,
-				removeComments: true,
-				removeRedundantAttributes: true,
-				removeScriptTypeAttributes: true,
-				removeStyleLinkTypeAttributes: true
-			}
+			minify: config.minify
 		}),
 		new CopyWebpackPlugin([{
 			from: path.join(__dirname, 'static'),
 			to: 'static'
 		}], {
-			ignore: [ 			
-				'.*', // ignore files starting with a dot
-			],
-			copyUnmodified: false
+			// ignore files starting with a dot
+			ignore: [ '.*' ],
 		}),
 	].filter(function(plugin) {
 		const disabled = development ? [
@@ -98,9 +101,9 @@ module.exports = {
 		] : [
 			'WebpackCleanupPlugin',
 		];		
-		const canuse = disabled.indexOf(plugin.constructor.name) < 0;
-		canuse && console.log(">> plugin: " + plugin.constructor.name);		
-		return canuse;
+		const use = disabled.indexOf(plugin.constructor.name) < 0;
+		use && console.log(">> plugin: " + plugin.constructor.name);		
+		return use;
 	})
 }
 
