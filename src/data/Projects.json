@@ -160,7 +160,7 @@
 		}]
 	},
 
-	"course_feedback": {
+	"course-feedback": {
 		"title": "Course Feedback",
 		"types": ["Web Application", "Statistics"],
 		"skills": ["web", "laravel", "mysql", "php", "html", "css", "javascript", "jquery", "bootstrap", "blade", "sublime", "softeng", "mvc"],

@@ -3,12 +3,21 @@
 <head>
 
 <% this.models = require('../models/index') %>
-<%= require('./components/head.ejs')() %>
+<%= require('../components/head.ejs')() %>
 
 </head>
 <body>
 
-<%= require('../components/body.ejs')() %>
+<% Object.keys(models.Projects).forEach(function(id, index) {
+	var project = models.Projects[id];
+	if(!project || !project.title) return;
+
+	var component = require('../components/projects/project.ejs');
+%>
+
+<%= component({ id, project, index }) %>
+
+<% }); %>
 
 </body>
 </html>

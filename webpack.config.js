@@ -17,9 +17,7 @@ const config  = {
 			removeScriptTypeAttributes: true,
 			removeStyleLinkTypeAttributes: true
 		},
-
 };
-
 
 module.exports = {
 	entry: {
@@ -85,14 +83,19 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/index.ejs',
-			minify: config.minify
+			minify: config.minify,
+      		filename: 'index.html'
+		}),
+		new HtmlWebpackPlugin({
+			template: './src/pages/projects.ejs',
+			minify: config.minify,			
+      		filename: 'projects.html'
 		}),
 		new CopyWebpackPlugin([{
 			from: path.join(__dirname, 'static'),
 			to: 'static'
 		}], {
-			// ignore files starting with a dot
-			ignore: [ '.*' ],
+			ignore: [ '.*' ],	// ignore files starting with a dot
 		}),
 	].filter(function(plugin) {
 		const disabled = development ? [
