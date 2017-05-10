@@ -70,7 +70,7 @@
 	"tuntuni": {
 		"title": "Tuntuni",
 		"types": ["Desktop Application", "Communication", "Local Area Network"],
-		"skills": ["java", "fxml", "javafx" "sockets", "maven", "desktop", "networking"],
+		"skills": ["java", "fxml", "javafx", "sockets", "maven", "desktop", "networking"],
 		"story": "Tuntuni is an application for peer to peer real time video conferencing and messaging within local network. It automatically discovers connected users withing same local networks. Provides a real time video conferencing, simple text messaging features with an attractive user interface.",
 		"logo": "logo.png",
 		"links": {
