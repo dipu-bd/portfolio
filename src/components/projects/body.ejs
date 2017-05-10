@@ -1,0 +1,27 @@
+<div class="project-body">      
+
+	<div class="row">
+		<!-- Project Story -->
+		<div class="col-md-4 col-md-offset-1">
+			<div class="project-story">
+				<%= project.story %>
+			</div>
+		</div>
+		<!-- #/.story -->   
+
+		<!-- Project Carousel -->
+		<div class="col-md-7 col-xs-12">
+			<%= require('./carousel.ejs')({ id, project }) %>
+		</div> 
+		<!-- #/.carousel -->        
+	</div>
+
+	<!-- Project Links -->
+	<div class="row project-links">
+		<div class="col-md-4 col-md-offset-1 col-xs-12">
+			<%= require('./links.ejs')({ id, project }) %>
+		</div>
+	</div>
+	<!-- #/.links -->   
+
+</div>

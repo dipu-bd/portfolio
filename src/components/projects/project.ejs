@@ -1,0 +1,26 @@
+<section id="project-<%= index+1 %>" class="project-highlight"> 
+	<div class="container">  
+
+		<!-- Project number -->
+		<div class="row">
+			<div class="col-xs-12 project-number">
+				<div class="large hidden-sm hidden-xs">
+					<%= index + 1 %>
+				</div>
+				<div class="small">
+					<%= index + 1 %>
+				</div>
+			</div>
+		</div>
+		<!-- #/.project-number -->
+
+	 	<!-- Project Header -->
+	 	<%= require('./header.ejs')({ id, project }) %>
+	 	<!-- #/.project-header -->
+		
+		<!-- Project Body -->
+		<%= require('./body.ejs')({ id, project }) %>
+		<!-- #/.project-body -->
+
+	</div> <!-- #/.container -->
+</section>

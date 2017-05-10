@@ -1,0 +1,22 @@
+<!-- Project Links -->
+<% if('download' in project.links) { %>
+<a href="<%= project.links.download %>" class="btn btn-success btn-lg btn-block">
+	<i class="fa fa-download"></i> Download This
+</a>
+<% } %>
+<% if('demo' in project.links) { %>
+<a href="<%= project.links.danger %>" class="btn btn-primary btn-lg btn-block" target="_blank">
+	<i class="fa fa-eye"></i> Open A Demo
+</a>
+<% } %>
+<% if('web' in project.links) { %>
+<a href="<%= project.links.web %>" class="btn btn-primary btn-lg btn-block" target="_blank">
+	<i class="fa fa-globe"></i> Visit Website
+</a>
+<% } %>
+<% if('source' in project.links) { %>
+<a href="<%= project.links.source %>" class="btn btn-default btn-lg btn-block" target="_blank">
+	<i class="fa fa-github-square"></i> View Source
+</a>
+<% } %>
+<!-- #/.project-links -->
