@@ -18,23 +18,8 @@ models.Website.projects.forEach(function(id, index) {
 				</div>
 			</div>
 		</div>
-	 
-		<!-- Project Header -->
-		<div class="row project-header">
-			<div class="col-xs-12">
-				<div class="project-title">
-					<% if('logo' in project) { %>
-					<img src="<%= 'static/' + id + '/' + project.logo %>" alt="<%= project.name %>-logo" style="height: 64px">
-					<% } %>
-					<%= project.title %>
-				</div>
-				<div class="project-types">
-					<% project.types.forEach(function(type) { %>
-						<span class="project-type"><%= type %></span>
-					<%}); %>
-				</div>
-			</div>
-		</div><!-- #/.project-header -->
+	 	
+	 	<%= require('./header.ejs')({ id, project }) %>
 
 		<!-- Project Body -->
 		<div class="project-body">      
