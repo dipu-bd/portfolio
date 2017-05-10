@@ -266,12 +266,24 @@
 		}]
 	},
 
-	"flash-copier": {
-
+	"flash-copyer": {
+		"title": "Flash Copyer",
+		"types": ["Desktop Application", "Utility"],
+		"skills": ["desktop", "csharp", "vstudio", "winforms", ".net"],
+		"story": "This is a hack-tool that automatically copies contents of inserted flash-storage without any notification.",
+		"logo": "logo.png",
+		"links": {
+			"download": "https://github.com/dipu-bd/FlashCopyer/releases/download/1.0-beta/FlashCopy_v1.0.exe",
+			"source": "https://github.com/dipu-bd/FlashCopyer"
+		},
+		"images": [{
+			"src": "capture.png",
+			"alt": "Flash Copyer"
+		}]
 	},
 
 	"process-scheduling": {
-
+		
 	},
 
 	"ace-fx": {
