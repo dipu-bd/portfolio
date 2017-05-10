@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-//const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 //const WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 const development = (process.env.NODE_ENV !== 'production');
@@ -82,7 +82,6 @@ module.exports = {
 				removeStyleLinkTypeAttributes: true
 			}
 		}),
-		/*
 		new CopyWebpackPlugin([{
 			from: path.join(__dirname, 'static'),
 			to: 'static'
@@ -92,7 +91,6 @@ module.exports = {
 			],
 			copyUnmodified: false
 		}),
-		*/
 	].filter(function(plugin) {
 		const disabled = development ? [
 			'UglifyJsPlugin',
