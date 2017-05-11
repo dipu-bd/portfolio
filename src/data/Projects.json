@@ -283,7 +283,18 @@
 	},
 
 	"process-scheduling": {
-		
+		"title": "Process Scheduling",
+		"types": ["Desktop Application", "Simulation"],
+		"skills": ["java", "desktop", "swing", "nsis", "netbeans"],
+		"story": "A nice tool to visualize how different process scheduling algorithm works",
+		"links": {
+			"download": "https://github.com/dipu-bd/ProcessScheduling/releases/download/1.0/ProcessScheduling.zip",
+			"source": "https://github.com/dipu-bd/ProcessScheduling"
+		},
+		"images": [{
+			"src": "shot.png",
+			"alt": "Process Scheduling"
+		}]
 	},
 
 	"ace-fx": {
