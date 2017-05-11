@@ -1,17 +1,15 @@
 <section id="project-<%= index+1 %>" class="project-highlight"> 
-	<div class="container">  
+	<div class="container"> 
 
 		<!-- Project number -->
+		<% if (typeof number === 'undefined' || number) { %>
 		<div class="row">
 			<div class="col-xs-12 project-number">
-				<div class="large hidden-sm hidden-xs">
-					<%= index + 1 %>
-				</div>
-				<div class="small">
-					<%= index + 1 %>
-				</div>
+				<div class="large hidden-sm hidden-xs"><%= index + 1 %></div>
+				<div class="small"><%= index + 1 %></div>
 			</div>
 		</div>
+		<% } %>
 		<!-- #/.project-number -->
 
 	 	<!-- Project Header -->
