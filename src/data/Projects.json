@@ -10,6 +10,7 @@
 			"source": "https://github.com/dipu-bd/UVA-Arena",
 			"download": "https://github.com/dipu-bd/UVA-Arena/releases/download/1.7/UVA_Arena_1.7_setup.exe"
 		},
+		"version": "1.7",
 		"images": [{
 			"src": "landing.png",
 			"alt": "UVA Arena Screen-shots"
@@ -73,6 +74,7 @@
 		"skills": ["java", "fxml", "javafx", "sockets", "maven", "desktop", "networking"],
 		"story": "Tuntuni is an application for peer to peer real time video conferencing and messaging within local network. It automatically discovers connected users withing same local networks. Provides a real time video conferencing, simple text messaging features with an attractive user interface.",
 		"logo": "logo.png",
+		"version": "1.0-SNAPSHOT",
 		"links": {
 			"source": "https://github.com/dipu-bd/Tuntuni",
 			"download": "https://github.com/dipu-bd/Tuntuni/releases/download/1.0-alpha1/Tuntuni-1.0-SNAPSHOT.exe"
@@ -118,9 +120,6 @@
 		}, {
 			"src": "proposals.png",
 			"alt": "Proposals"
-		}, {
-			"src": "loading.png",
-			"alt": "Cool loading page"
 		}]
 	},
 
@@ -154,7 +153,7 @@
 			"src": "doselist.png",
 			"alt": "Dose information"
 		}, {
-			"src": "prodile_edit.png",
+			"src": "profile_edit.png",
 			"alt": "Profile",
 			"caption": "Add email or phone to get notification"
 		}]
@@ -211,6 +210,7 @@
 			"download": "https://github.com/dipu-bd/alpr-bd/archive/master.zip",
 			"report": "https://github.com/dipu-bd/alpr-bd/releases/download/1.0-alpha/report.pdf"			
 		}, 
+		"version": "pre-release",
 		"images": [{
 			"src": "main.jpg",
 			"alt": "A sample image"
@@ -233,6 +233,7 @@
 			"source": "https://github.com/dipu-bd/Lab-Exam",
 			"download": "https://github.com/dipu-bd/Lab-Exam/archive/master.zip"
 		},
+		"version": "pre-release",
 		"images": [{
 			"src": "server_landing.png",
 			"alt": "Server Application"
