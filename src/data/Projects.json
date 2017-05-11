@@ -273,6 +273,7 @@
 		"skills": ["desktop", "csharp", "vstudio", "winforms", ".net"],
 		"story": "This is a hack-tool that automatically copies contents of inserted flash-storage without any notification.",
 		"logo": "logo.png",
+		"version": "1.0-beta",
 		"links": {
 			"download": "https://github.com/dipu-bd/FlashCopyer/releases/download/1.0-beta/FlashCopy_v1.0.exe",
 			"source": "https://github.com/dipu-bd/FlashCopyer"
@@ -288,6 +289,7 @@
 		"types": ["Desktop Application", "Simulation"],
 		"skills": ["java", "desktop", "swing", "nsis", "netbeans"],
 		"story": "A nice tool to visualize how different process scheduling algorithm works",
+		"version": "1.0",
 		"links": {
 			"download": "https://github.com/dipu-bd/ProcessScheduling/releases/download/1.0/ProcessScheduling.zip",
 			"source": "https://github.com/dipu-bd/ProcessScheduling"
@@ -298,19 +300,75 @@
 		}]
 	},
 
+	"desktop-notes": {
+		"title": "Desktop Notes",
+		"types": ["Desktop Application", "Utility"],
+		"skills": [ "desktop", ".net", "csharp", "winforms", "vstudio" ],
+		"story": "Keep your things noted anytime just by one click. This application will store your notes and put it back where it was the last time every time you login to your computer.",
+		"logo": "logo.png",
+		"version": "1.2",
+		"links": {			
+			"source": "https://github.com/dipu-bd/Desktop-Notes",
+			"download": "https://github.com/dipu-bd/Desktop-Notes/releases/download/1.2/Desktop.Notes.1.2.exe"
+		},
+		"images": [{
+			"src": "note.png",
+			"alt": "Sample Note"
+		}, {
+			"src": "notify.png",
+			"alt": "Notification Icon"
+		}, {
+			"src": "settings.png", 
+			"alt": "Settings Window"
+		}]
+	},
+
+	"cryptography": {
+		"title": "Cryptography",
+		"types": ["Desktop Application", "Simulation"],
+		"skills": ["desktop", "csharp", ".net", "winforms", "vstudio"],
+		"logo": "logo.png",
+		"version": "pre-release",
+		"links": {
+			"source": "https://github.com/dipu-bd/cryptography",
+			"download": "https://github.com/dipu-bd/Cryptography/releases/download/1.0-alpha/Cryptography.exe"
+		},
+		"images": [{
+			"src": "caesar.png",
+			"alt": "Caesar Cipher"
+		}, {
+			"src": "polyalphabetic.png",
+			"alt": "Polyalphabetic Cipher"
+		}, {
+			"src": "polybius.png",
+			"alt": "Polybius Squared Cipher"
+		}]
+	},
+
+	"uva-problem-category": {
+		"title": "UVA Problem Category Editor",
+		"types": ["Desktop Application", "Utility"],
+		"skills": ["csharp", ".net", "vstudio", "winforms"],
+		"story": "This project is a subpart of UVA-Arena. It contains category data that is used by the main project.",
+		"logo": "logo.png",
+		"links": {
+			"download": "https://github.com/dipu-bd/uva-problem-category/releases/download/1.0%60/uva-problem-category.zip",
+			"source": "https://github.com/dipu-bd/uva-problem-category"
+		},
+		"images": [{
+			"src": "main.png",
+			"alt": "Main Editor"
+		}, {
+			"src": "json.png",
+			"alt": "JSON Editor"
+		}]
+	},
+
 	"ace-fx": {
 
 	},
 
-	"uva-problem-category": {
-
-	},
-
-	"desktop-notes": {
-
-	},
-
-	"cryptography": {
+	"web-address-book": {
 
 	},
 
@@ -319,10 +377,6 @@
 	},
 
 	"simple-sudoku-solver": {
-
-	},
-
-	"web-address-book": {
 
 	},
 
