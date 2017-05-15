@@ -79,7 +79,7 @@ section.project-highlight {
 		}
 	}
 
-	.carousel {		
+	.carousel {
 		.item {
 			@media #{$xs-max} {
   				height: 250px;
@@ -129,7 +129,7 @@ section.project-highlight {
 	}
 }
 
-@each $id, $color in 
+@each $id, $color in
 				(#project-1, Orange), 
 				(#project-2, #A5D6A7),
 				(#project-3, Lime) 
