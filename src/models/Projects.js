@@ -4,8 +4,7 @@ var Projects = require('../data/Projects.json');
 //
 // Enhance module
 //
-Projects.types = extractTypes();
-Projects.sortedTypes = sortedTypes();
+mapKeys();
 
 //
 // Export the modules
@@ -15,19 +14,9 @@ module.exports = Projects;
 //
 // Private functions
 //
-function extractTypes()
+function mapKeys()
 {
-	let types = {};
 	_.forIn(Projects, function(project, key) {
-		_.each(project.types, function(type) {
-			types[type] = types[type] || [];
-			types[type].push(key);
-		});
+		project.key = key;
 	});
-	return types;
-}
-
-function sortedTypes() {
-	let types = extractTypes();
-	return _.sortBy(_.keys(types), k => -(types[k].length));
 }
