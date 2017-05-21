@@ -4,7 +4,9 @@ var Projects = require('../data/Projects.json');
 //
 // Enhance module
 //
-mapKeys();
+_.each(_.keys(Projects), function(key) {
+	Projects[key].key = key;
+});
 
 //
 // Export the modules
@@ -14,9 +16,3 @@ module.exports = Projects;
 //
 // Private functions
 //
-function mapKeys()
-{
-	_.forIn(Projects, function(project, key) {
-		project.key = key;
-	});
-}
