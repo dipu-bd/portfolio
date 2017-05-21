@@ -12,7 +12,7 @@
 			var image = project.images[0];
 	%>
 	<div class="thumbnail">
-		<img src="static/id/<%= image.src %>" alt="<%= image.alt || '' %>">
+		<img src="static/<%= id + '/' + image.src %>" alt="<%= image.alt || '' %>">
 		<div class="caption">
 			<h3><%= project.name %></h3>
 			<p><%= project.story %></p>
