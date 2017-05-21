@@ -7,7 +7,7 @@ var ProjectInfo = {};
 // Enhance module
 //
 ProjectInfo.project = (key => Projects[key]);
-ProjectInfo.types = extract('type');
+ProjectInfo.types = extract('types');
 ProjectInfo.skills = extract('skills');
 
 //
@@ -33,9 +33,9 @@ function extract(field)
 		data.push({
 			name: name,
 			count: value.length,
-			projects: _.map(value, key => Projects[key])
+			projects: _.sortBy(_.map(value, key => Projects[key]), ['title'])
 		});
 	});
 
-	return data;
+	return _.sortBy(data, [x => -x.count, 'name']);
 }
