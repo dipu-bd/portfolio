@@ -6,9 +6,9 @@ var ProjectInfo = {};
 //
 // Enhance module
 //
-ProjectInfo.project = getProject;
-ProjectInfo.types = extractTypes();
-ProjectInfo.sortedTypes = sortedTypes();
+ProjectInfo.project = (key => Projects[key]);
+ProjectInfo.types = extract('type');
+ProjectInfo.skills = extract('skills');
 
 //
 // Export the modules
@@ -18,23 +18,24 @@ module.exports = ProjectInfo;
 //
 // Private functions
 //
-function extractTypes()
+function extract(field)
 {
-	let types = {};
+	let values = {};
 	_.forIn(Projects, function(project, key) {
-		_.each(project.types, function(type) {
-			types[type] = types[type] || [];
-			types[type].push(key);
+		_.each(project[field], function(name) {
+			values[name] = values[name] || [];
+			values[name].push(key);
 		});
 	});
-	return types;
-}
 
-function sortedTypes() {
-	let types = extractTypes();
-	return _.sortBy(_.keys(types), k => -(types[k].length));
-}
+	let data = [];
+	_.forIn(values, function(value, name) {
+		data.push({
+			name: name,
+			count: value.length,
+			projects: _.map(value, key => Projects[key])
+		});
+	});
 
-function getProject(key) {
-	return Projects[key];
+	return data;
 }
