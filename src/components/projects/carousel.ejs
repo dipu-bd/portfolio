@@ -14,7 +14,7 @@
 		<% project.images.forEach(function(image, i) { %>
 		<div class="item <%= i ? '' : 'active' %>">
 			<div class="carousel-image">
-				<img src="static/id/<%= image.src %>" alt="<%= image.alt || '' %>">
+				<img src="static/<%= id + '/' + image.src %>" alt="<%= image.alt || '' %>">
 			</div>
 			<div class="carousel-caption">
 				<h3><%= image.alt || '' %></h3>
