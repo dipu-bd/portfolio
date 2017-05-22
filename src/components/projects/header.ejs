@@ -4,7 +4,7 @@
 		<!-- Project Title -->		
 		<div class="project-title">
 			<% if('logo' in project) { %>
-				<img src="<%= 'static/' + id + '/' + project.logo %>" 
+				<img src="static/<%= project.key %>/<%= project.logo %>" 
 					alt="<%= project.name %>-logo" style="height: 64px">
 			<% } %>
 			<%= project.title %>

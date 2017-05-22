@@ -1,9 +1,9 @@
 <%
-models.Website.projects.forEach(function(id, index) {
-	var project = models.Projects[id];
+models.Website.projects.forEach(function(key, index) {
+	var project = models.Projects[key];
 	if(!project) return;
 %>
 
-<%= require('./project.ejs')({ id, project, index }) %>
+<%= require('./project.ejs')({ project, index }) %>
 
 <% }); %>

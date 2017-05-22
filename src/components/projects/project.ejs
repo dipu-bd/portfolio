@@ -1,4 +1,4 @@
-<section id="project-<%= index+1 %>" class="project-highlight"> 
+<section id="project-<%= index + 1 %>" class="project-highlight"> 
 	<div class="container"> 
 
 		<!-- Project number -->
@@ -13,11 +13,11 @@
 		<!-- #/.project-number -->
 
 	 	<!-- Project Header -->
-	 	<%= require('./header.ejs')({ id, project }) %>
+	 	<%= require('./header.ejs')({ project }) %>
 	 	<!-- #/.project-header -->
 		
 		<!-- Project Body -->
-		<%= require('./body.ejs')({ id, project }) %>
+		<%= require('./body.ejs')({ project }) %>
 		<!-- #/.project-body -->
 
 	</div> <!-- #/.container -->

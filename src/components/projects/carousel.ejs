@@ -1,9 +1,9 @@
-<div id="carousel-<%= id %>" class="carousel slide" data-ride="carousel">
+<div id="carousel-<%= project.key %>" class="carousel slide" data-ride="carousel">
 
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<% project.images.forEach(function(d, i) { %>
-			<li data-target="#carousel-<%= id %>" data-slide-to="<%= i %>" 
+			<li data-target="#carousel-<%= project.key %>" data-slide-to="<%= i %>" 
 				class="<%= i ? '' : 'active' %>"></li>
 		<% }); %>
 	</ol> 
@@ -14,7 +14,7 @@
 		<% project.images.forEach(function(image, i) { %>
 		<div class="item <%= i ? '' : 'active' %>">
 			<div class="carousel-image">
-				<img src="static/<%= id + '/' + image.src %>" alt="<%= image.alt || '' %>">
+				<img src="static/<%= project.key %>/<%= image.src %>" alt="<%= image.alt || '' %>">
 			</div>
 			<div class="carousel-caption">
 				<h3><%= image.alt || '' %></h3>
@@ -27,11 +27,11 @@
 
 	<!-- Controls -->
 	<% if (project.images.length > 1) { %>
-		<a class="left carousel-control" href="#carousel-<%= id %>" role="button" data-slide="prev">
+		<a class="left carousel-control" href="#carousel-<%= project.key %>" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="right carousel-control" href="#carousel-<%= id %>" role="button" data-slide="next">
+		<a class="right carousel-control" href="#carousel-<%= project.key %>" role="button" data-slide="next">
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>
