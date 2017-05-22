@@ -1,24 +1,29 @@
 <% models.ProjectInfo.types.forEach(function(type) { %>
 <section id="other-projects">
-	<h1>
-		<%= type.name %>
-		<small>(<%= type.count %>) projects</small>
-	</h1>
-	
-	<% type.projects.forEach(function(project) {
-			const image = project.images[0];
-	%>
-	<div class="thumbnail">
-		<img src="static/<%= project.key %>/<%= image.src %>" alt="<%= image.alt || '' %>" style="width: 300px">
-		<div class="caption">
-			<h4><%= project.title %></h4>
-			<p><%= project.story %></p>
-			<p>
-				<a href="#" class="btn btn-primary" role="button">Button</a> 
-				<a href="#" class="btn btn-default" role="button">Button</a>
-			</p>
+	<div class="container">
+		<h1 class="text-center">
+			<%= type.name %>
+			<small>(<%= type.count %>) projects</small>
+		</h1>
+		
+		<div class="row">
+			<% type.projects.forEach(function(project) {
+					const image = project.images[0];
+			%>
+			<div class="col-md-3 col-sm-2">
+				<div class="thumbnail btn-default" style="height: 450px; cursor: pointer" onclick="window.location+='/projects.html#<%= project.key %>'">
+					<img src="static/<%= project.key %>/<%= image.src %>" alt="<%= image.alt || '' %>" style="max-height: 250px">
+					<div style="height: 150px; padding: 5px 7px 10px 7px">
+						<h4><%= project.title %></h4>
+						<p style="text-align: justify; text-overflow: ellipsis;">
+							<%= project.story || '< No Description >' %>
+						</p>
+					</div>
+				</div>
+				</div>
+			<% }) %>
 		</div>
-	</div>
-	<% }) %>
+
+	</div>	
 </section>
 <% }); %>
